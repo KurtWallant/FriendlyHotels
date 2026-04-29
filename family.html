@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="it" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="geo.region" content="IT-BZ">
+<meta name="geo.placename" content="Santa Cristina Val Gardena">
+<meta name="geo.position" content="46.5577;11.7264">
+<meta name="ICBM" content="46.5577, 11.7264">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FamilyFriendly.it — La guida indipendente per una vacanza in famiglia nelle Dolomiti</title>
+<meta name="description" content="Guida indipendente per viaggiare con bambini in Val Gardena, Alpe di Siusi e dintorni. Hotel family-friendly, sentieri sicuri, consigli pratici e Q&A con Kurt Wallant.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="family.html">
+<link rel="alternate" hreflang="it" href="family.html">
+<link rel="alternate" hreflang="en" href="https://www.friendlyhotels.it/family/en/">
+<link rel="alternate" hreflang="x-default" href="family.html">
+<meta name="theme-color" content="#2e6b8a">
+<meta name="author" content="Kurt Wallant">
+<meta property="og:type" content="article">
+<meta property="og:title" content="FamilyFriendly.it — Vacanza in famiglia nelle Dolomiti">
+<meta property="og:description" content="Hotel family-friendly, sentieri sicuri, parchi gioco in quota, consigli pratici e Q&A con Kurt Wallant per viaggiare con bambini in Val Gardena.">
+<meta property="og:url" content="https://www.friendlyhotels.it/family/">
+<meta property="og:site_name" content="FamilyFriendly.it">
+<meta property="og:locale" content="it_IT">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image" content="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="article:author" content="Kurt Wallant">
+<meta property="article:modified_time" content="2026-04-29T10:00:00+02:00">
+<meta property="article:published_time" content="2026-03-30">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --stone-50: #fafaf9;
+  --stone-100: #f5f5f4;
+  --stone-200: #e7e5e4;
+  --stone-300: #d6d3d1;
+  --stone-400: #a8a29e;
+  --stone-500: #655e59;
+  --stone-600: #57534e;
+  --stone-700: #44403c;
+  --stone-800: #292524;
+  --stone-900: #1c1917;
+
+  --sky: #2e6b8a;
+  --sky-light: #4a9bc5;
+  --sky-pale: #e8f2f8;
+  --deep: #1a3d52;
+  --sun: #e8a838;
+  --sun-light: #f0c56e;
+  --cream: #fdf9f4;
+  --meadow: #5a8a5e;
+  --meadow-light: #d8ecd6;
+  --coral: #d4715e;
+  --coral-light: #eaada0;
+  --lavender: #8b7db8;
+  --sand: #e8ddd0;
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'DM Sans', -apple-system, sans-serif;
+  --font-accent: 'Playfair Display', Georgia, serif;
+  --nav-h: 72px;
+  --section-pad: clamp(60px, 10vw, 120px);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: var(--nav-h); }
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--stone-800);
+  background: var(--cream);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.skip-link {
+  position: absolute; top: -100%; left: 16px; z-index: 9999;
+  background: var(--sky); color: #fff; padding: 12px 24px;
+  border-radius: 0 0 6px 6px; font-size: .85rem; font-weight: 600;
+  text-decoration: none; transition: top .3s;
+}
+.skip-link:focus { top: 0; }
+
+/* ─── NAVBAR ─── */
+.navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  height: auto;
+  transition: background .4s, box-shadow .4s, backdrop-filter .4s;
+}
+.navbar.scrolled {
+  background: rgba(253,249,244,.94);
+  backdrop-filter: blur(20px) saturate(1.4);
+  box-shadow: 0 1px 0 rgba(0,0,0,.06), 0 4px 16px rgba(46,107,138,.06);
+}
+.navbar .nav-inner {
+  max-width: 1280px; margin: 0 auto;
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  padding: 10px clamp(20px,4vw,48px) 0;
+  gap: 0;
+}
+.nav-logo {
+  font-family: var(--font-display); font-size: 1.15rem; font-weight: 700;
+  color: #fff; text-decoration: none; letter-spacing: .02em;
+  transition: color .3s; display: none;
+}
+.navbar.scrolled .nav-logo { color: var(--stone-900); }
+.nav-logo span { font-weight: 400; font-style: italic; opacity: .7; }
+
+.nav-subtitle {
+  width: 100%; text-align: center; padding: 4px 0 8px;
+  font-family: var(--font-display); font-size: 1.1rem; font-weight: 400;
+  font-style: italic; letter-spacing: .03em;
+  color: rgba(255,255,255,.75); text-decoration: none;
+  transition: color .3s, opacity .3s;
+}
+.nav-subtitle:hover { color: rgba(255,255,255,.8); }
+.navbar.scrolled .nav-subtitle { color: var(--stone-400); }
+.navbar.scrolled .nav-subtitle:hover { color: var(--forest); }
+.nav-links { display: flex; gap: 2px; align-items: center; list-style: none; flex-wrap: nowrap; }
+.nav-links a {
+  font-size: .75rem; font-weight: 500; text-transform: uppercase;
+  letter-spacing: .06em; color: rgba(255,255,255,.85);
+  text-decoration: none; padding: 7px 9px; border-radius: 4px;
+  transition: color .3s, background .3s; white-space: nowrap;
+}
+.navbar.scrolled .nav-links a { color: var(--stone-700); }
+.nav-links a:hover { color: #fff; background: rgba(255,255,255,.12); }
+.navbar.scrolled .nav-links a:hover { color: var(--sky); background: rgba(46,107,138,.06); }
+
+
+.lang-toggle-wrap { display: flex; gap: 2px; align-items: center; margin-left: 8px; }
+.lang-btn {
+  background: none; border: 1px solid rgba(255,255,255,.3); color: rgba(255,255,255,.7);
+  font-size: .7rem; font-weight: 600; padding: 4px 10px; border-radius: 20px;
+  cursor: pointer; transition: all .3s; font-family: var(--font-body); letter-spacing: .05em;
+}
+.lang-btn.active { background: rgba(255,255,255,.2); color: #fff; border-color: rgba(255,255,255,.5); }
+.navbar.scrolled .lang-btn { border-color: var(--stone-300); color: var(--stone-500); }
+.navbar.scrolled .lang-btn.active { background: var(--sky); color: #fff; border-color: var(--sky); }
+
+/* ─── NAV GUIDES ─── */
+.nav-guides {
+  display: flex; align-items: center; gap: 3px;
+  margin-left: 6px; padding-left: 10px;
+  border-left: 1px solid rgba(255,255,255,.15);
+}
+.navbar.scrolled .nav-guides { border-left-color: rgba(0,0,0,.08); }
+.nav-guides a {
+  font-size: .62rem !important; font-weight: 600 !important;
+  text-transform: uppercase !important; letter-spacing: .04em !important;
+  padding: 4px 8px !important; border-radius: 20px !important;
+  white-space: nowrap !important; transition: all .3s !important;
+  text-decoration: none !important;
+}
+.nav-guides a.g-home   { background: rgba(45,74,62,.15);   color: rgba(255,255,255,.8) !important; }
+.nav-guides a.g-family { background: rgba(46,107,138,.15); color: rgba(255,255,255,.8) !important; }
+.nav-guides a.g-dog    { background: rgba(212,165,116,.15); color: rgba(255,255,255,.8) !important; }
+.nav-guides a.g-bike   { background: rgba(184,92,56,.15);  color: rgba(255,255,255,.8) !important; }
+.nav-guides a.g-bus    { background: rgba(90,122,94,.15);   color: rgba(255,255,255,.8) !important; }
+.navbar.scrolled .nav-guides a.g-home   { background: rgba(45,74,62,.1);   color: #2d4a3e !important; }
+.navbar.scrolled .nav-guides a.g-family { background: rgba(46,107,138,.1); color: #2e6b8a !important; }
+.navbar.scrolled .nav-guides a.g-dog    { background: rgba(90,64,50,.08);  color: #5a4032 !important; }
+.navbar.scrolled .nav-guides a.g-bike   { background: rgba(184,92,56,.08); color: #b85c38 !important; }
+.navbar.scrolled .nav-guides a.g-bus    { background: rgba(90,122,94,.08); color: #5a7a5e !important; }
+.nav-guides a:hover { transform: scale(1.05); filter: brightness(1.2); }
+
+.mobile-toggle {
+  display: none; background: none; border: none; cursor: pointer;
+  width: 32px; height: 32px; position: relative;
+}
+.mobile-toggle span {
+  display: block; width: 22px; height: 2px; background: #fff;
+  position: absolute; left: 5px; transition: .3s;
+}
+.navbar.scrolled .mobile-toggle span { background: var(--stone-800); }
+.mobile-toggle span:nth-child(1) { top: 9px; }
+.mobile-toggle span:nth-child(2) { top: 15px; }
+.mobile-toggle span:nth-child(3) { top: 21px; }
+
+/* ─── HERO ─── */
+body.lang-it [data-en] { display:none !important; }
+body.lang-en [data-it] { display:none !important; }
+
+
+
+.hero {
+  min-height: 100vh; position: relative; display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(
+                175deg,
+                rgba(26,61,82,.5) 0%,
+                rgba(46,107,138,.35) 25%,
+                rgba(0,0,0,.15) 55%,
+                rgba(26,61,82,.55) 100%
+              ),
+              url('https://i.imgur.com/6lypT9R.png') center/cover no-repeat;
+  overflow: hidden;
+}
+.hero::after {
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 200px;
+  background: linear-gradient(to top, var(--cream), transparent);
+  pointer-events: none;
+}
+.hero-content {
+  text-align: center; padding: 0 24px; position: relative; z-index: 2;
+  animation: heroFade 1.2s ease-out both;
+}
+@keyframes heroFade {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero-eyebrow {
+  font-family: var(--font-body); font-size: .72rem; text-transform: uppercase;
+  letter-spacing: .35em; color: var(--sun-light); margin-bottom: 20px;
+  font-weight: 500;
+}
+.hero h1 {
+  font-family: var(--font-display); font-size: clamp(3rem,7vw,5.5rem);
+  font-weight: 400; color: #fff; line-height: 1.05; margin-bottom: 20px;
+}
+.hero h1 em { font-style: italic; color: var(--sun-light); }
+.hero-sub {
+  font-family: var(--font-body); font-size: clamp(.95rem,1.3vw,1.15rem);
+  color: rgba(255,255,255,.75); max-width: 620px; margin: 0 auto 36px;
+  font-weight: 300; line-height: 1.7;
+}
+.hero-cta { display: inline-flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+.btn {
+  display: inline-block; padding: 14px 36px; font-size: .82rem;
+  font-weight: 600; text-transform: uppercase; letter-spacing: .1em;
+  text-decoration: none; border-radius: 3px; transition: all .35s;
+}
+.btn-primary {
+  background: var(--sun); color: var(--deep); border: 1px solid var(--sun);
+  box-shadow: 0 4px 14px rgba(232,168,56,.35);
+}
+.btn-primary:hover {
+  background: var(--sun-light);
+  box-shadow: 0 6px 20px rgba(232,168,56,.45);
+  transform: translateY(-1px);
+}
+.btn-outline {
+  background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.4);
+}
+.btn-outline:hover { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.75); }
+
+/* ─── SECTIONS ─── */
+section { padding: var(--section-pad) clamp(20px,5vw,48px); }
+.section-inner { max-width: 1200px; margin: 0 auto; }
+.section-eyebrow {
+  font-family: var(--font-body); font-size: .7rem; text-transform: uppercase;
+  letter-spacing: .3em; color: var(--sun); font-weight: 600; margin-bottom: 12px;
+}
+.section-title {
+  font-family: var(--font-display); font-size: clamp(2rem,4vw,3.2rem);
+  font-weight: 400; color: var(--stone-900); line-height: 1.15; margin-bottom: 16px;
+}
+.section-title em { font-style: italic; color: var(--sky); }
+.section-desc {
+  font-size: .95rem; color: var(--stone-500); max-width: 640px; line-height: 1.75;
+  margin-bottom: 48px;
+}
+
+/* ─── INTRO ─── */
+.intro { background: var(--cream); }
+.intro-grid {
+  display: grid; grid-template-columns: 2fr 3fr; gap: 80px; align-items: start;
+}
+.intro-img-wrap {
+  position: relative; aspect-ratio: 4/5; border-radius: 4px; overflow: hidden;
+}
+.intro-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+.intro-img-accent {
+  position: absolute; bottom: -16px; right: -16px; width: 140px; height: 140px;
+  border: 3px solid var(--sun); border-radius: 50%; z-index: -1; opacity: .3;
+}
+.intro-text h2 { margin-bottom: 24px; }
+.intro-text p { margin-bottom: 18px; color: var(--stone-600); }
+.intro-text .signature {
+  font-family: var(--font-display); font-style: italic; font-size: 1.4rem;
+  color: var(--sky); margin-top: 24px;
+}
+
+/* ─── INFO BLOCKS ─── */
+.info-section { background: #fff; }
+.info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.info-block {
+  background: var(--cream); border-radius: 8px; padding: 32px;
+  border: 1px solid var(--stone-200); transition: all .35s;
+}
+.info-block:hover {
+  box-shadow: 0 8px 24px rgba(46,107,138,.08);
+  transform: translateY(-2px);
+}
+.info-block.positive { border-left: 4px solid var(--meadow); }
+.info-block.negative { border-left: 4px solid var(--coral); }
+.info-block h3 {
+  font-family: var(--font-display); font-size: 1.25rem; font-weight: 600;
+  color: var(--stone-900); margin-bottom: 12px;
+}
+.info-block .block-icon { font-size: 1.5rem; margin-bottom: 10px; display: block; }
+.info-block p, .info-block li { font-size: .88rem; color: var(--stone-600); line-height: 1.65; }
+.info-block ul { list-style: none; padding: 0; }
+.info-block ul li { padding: 8px 0; border-bottom: 1px solid var(--stone-200); }
+.info-block ul li:last-child { border-bottom: none; }
+
+/* ─── CARD GRID ─── */
+.card-grid {
+  display: grid; gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+}
+.card {
+  cursor: pointer;
+
+  background: #fff; border-radius: 6px; overflow: hidden;
+  box-shadow: 0 2px 20px rgba(0,0,0,.04);
+  border: 1px solid transparent;
+  transition: transform .4s ease, box-shadow .4s ease, border-color .4s ease;
+}
+.card[onclick]:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,.12); }
+.card-img { aspect-ratio: 16/10; overflow: hidden; }
+.card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+.card:hover .card-img img { transform: scale(1.05); }
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,.08);
+  border-color: rgba(46,107,138,.15);
+}
+.card-body { padding: 28px 28px 32px; }
+.card-tag {
+  font-size: .68rem; text-transform: uppercase; letter-spacing: .15em;
+  color: var(--sun); font-weight: 600; margin-bottom: 8px;
+}
+.card-body h3 {
+  font-family: var(--font-display); font-size: 1.3rem; font-weight: 600;
+  color: var(--stone-900); margin-bottom: 10px; line-height: 1.25;
+}
+.card-body p { font-size: .88rem; color: var(--stone-500); line-height: 1.65; }
+.card-body .card-features {
+  font-size: .8rem; color: var(--sky); font-weight: 500; margin: 6px 0 4px;
+}
+.card-body .card-note {
+  font-size: .8rem; color: var(--stone-400); font-style: italic; margin-top: 6px;
+}
+
+/* ─── HIKE FILTERS ─── */
+.hikes-section { background: var(--cream); }
+.hike-difficulty-tabs { display: flex; gap: 8px; margin-bottom: 40px; flex-wrap: wrap; }
+.diff-tab {
+  padding: 10px 24px; border-radius: 40px; font-size: .78rem;
+  font-weight: 600; text-transform: uppercase; letter-spacing: .08em;
+  border: 1.5px solid var(--stone-300); color: var(--stone-500);
+  background: transparent; cursor: pointer; transition: all .3s;
+}
+.diff-tab.active, .diff-tab:hover { background: var(--sky); color: #fff; border-color: var(--sky); }
+.diff-tab[data-filter="facile"].active, .diff-tab[data-filter="facile"]:hover {
+  background: var(--meadow); border-color: var(--meadow); color: #fff;
+}
+.diff-tab[data-filter="media"].active, .diff-tab[data-filter="media"]:hover {
+  background: var(--sun); border-color: var(--sun); color: var(--deep);
+}
+
+/* ─── HOTELS ─── */
+.hotels-section { background: #fff; }
+.hotel-categories {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px;
+}
+.hotel-cat {
+  background: var(--cream); border-radius: 8px; padding: 28px;
+  border: 1px solid var(--stone-200); transition: all .35s;
+}
+.hotel-cat:hover {
+  border-color: rgba(232,168,56,.4);
+  box-shadow: 0 6px 24px rgba(232,168,56,.08);
+}
+.hotel-cat h3 {
+  font-family: var(--font-display); font-size: 1.2rem; font-weight: 600;
+  color: var(--stone-900); margin-bottom: 6px;
+}
+.hotel-cat .hotel-loc {
+  font-size: .7rem; text-transform: uppercase; letter-spacing: .12em;
+  color: var(--sun); font-weight: 600; margin-bottom: 8px; display: block;
+}
+.hotel-cat p { font-size: .85rem; color: var(--stone-500); line-height: 1.6; margin-bottom: 6px; }
+.hotel-cat .hotel-pro { color: var(--meadow); font-weight: 500; }
+.hotel-cat .hotel-con { color: var(--stone-400); font-style: italic; font-size: .82rem; }
+.hotel-cat a.hotel-link {
+  display: inline-block; margin-top: 12px; font-size: .75rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .1em; color: var(--sky);
+  text-decoration: none; border-bottom: 1px solid transparent; transition: border-color .3s;
+}
+.hotel-cat a.hotel-link:hover { border-color: var(--sky); }
+
+.zone-header {
+  margin-top: 48px; margin-bottom: 24px; padding-bottom: 12px;
+  border-bottom: 2px solid var(--sun);
+}
+.zone-header h3 {
+  font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; color: var(--stone-900);
+}
+.zone-header .zone-sub {
+  font-size: .78rem; text-transform: uppercase; letter-spacing: .15em;
+  color: var(--sun); font-weight: 600;
+}
+
+/* ─── TIPS SECTION ─── */
+.tips-section {
+  background: linear-gradient(160deg, #142e3e 0%, #1a3d30 50%, #1a3045 100%);
+  color: #fff; position: relative; overflow: hidden;
+}
+.tips-section::before {
+  content: ''; position: absolute; top: -100px; right: -100px;
+  width: 500px; height: 500px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(232,168,56,.12), transparent 70%);
+}
+.tips-section .section-eyebrow { color: var(--sun-light); }
+.tips-section .section-title { color: #fff; }
+.tips-section .section-title em { color: var(--sun-light); }
+.tips-section .section-desc { color: rgba(255,255,255,.55); }
+.tips-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px;
+}
+.tip-card {
+  background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08);
+  border-radius: 6px; padding: 22px; transition: all .35s;
+}
+.tip-card:hover {
+  background: rgba(255,255,255,.1); transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.2);
+}
+.tip-card .tip-icon { font-size: 1.4rem; margin-bottom: 8px; }
+.tip-card p { font-size: .84rem; color: rgba(255,255,255,.65); line-height: 1.6; }
+
+/* ─── CHECKLIST ─── */
+.checklist-section { background: var(--sky-pale); }
+.checklist-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px;
+}
+.checklist-item {
+  background: #fff; border-radius: 6px; padding: 16px 20px;
+  display: flex; align-items: center; gap: 12px;
+  border: 1px solid var(--stone-200); font-size: .88rem;
+  color: var(--stone-700); transition: all .3s;
+}
+.checklist-item:hover { border-color: var(--sky); box-shadow: 0 4px 12px rgba(46,107,138,.1); }
+.checklist-item .check-icon { font-size: 1.2rem; flex-shrink: 0; }
+
+/* ─── FAQ ─── */
+.faq-section { background: var(--cream); }
+.faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.faq-item {
+  background: #fff; border-radius: 6px;
+  border: 1px solid var(--stone-200); transition: all .3s; overflow: hidden;
+}
+.faq-item:hover { border-color: rgba(232,168,56,.5); box-shadow: 0 4px 16px rgba(232,168,56,.08); }
+.faq-item.open {
+  border-color: var(--sun);
+  border-left: 3px solid var(--sun);
+  box-shadow: 0 4px 20px rgba(232,168,56,.12);
+}
+.faq-item .faq-q {
+  font-family: var(--font-display); font-size: 1.02rem; font-weight: 600;
+  color: var(--stone-900); padding: 22px 28px; cursor: pointer;
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 12px; user-select: none; transition: color .2s;
+}
+.faq-item .faq-q::after {
+  content: '+'; font-family: var(--font-body); font-size: 1.4rem; font-weight: 300;
+  color: var(--sun); flex-shrink: 0; transition: transform .3s;
+}
+.faq-item.open .faq-q::after { transform: rotate(45deg); }
+.faq-item.open .faq-q { color: var(--sky); }
+.faq-item .faq-a {
+  font-size: .88rem; color: var(--stone-600); line-height: 1.65;
+  max-height: 0; overflow: hidden; transition: max-height .4s ease, padding .3s;
+  padding: 0 28px;
+}
+.faq-item.open .faq-a { max-height: 600px; padding: 0 28px 22px; }
+.faq-item .faq-a strong { color: var(--sky); font-weight: 600; }
+
+/* ─── KURT TIP ─── */
+.kurt-tip {
+  background: linear-gradient(135deg, #f0f7fb 0%, var(--cream) 100%);
+  border-left: 3px solid var(--sky-light);
+  padding: 24px 28px; border-radius: 0 6px 6px 0;
+  margin: 32px 0; box-shadow: 0 2px 12px rgba(46,107,138,.08);
+}
+.kurt-tip .tip-label {
+  font-size: .7rem; text-transform: uppercase; letter-spacing: .15em;
+  color: var(--sky); font-weight: 700; margin-bottom: 6px;
+}
+.kurt-tip p { font-size: .9rem; color: var(--stone-700); font-style: italic; }
+
+/* ─── CTA BANNER ─── */
+.cta-banner {
+  background: linear-gradient(135deg, #1a3d52 0%, #1a2e20 60%, #162535 100%);
+  padding: 80px clamp(20px,5vw,48px); text-align: center; position: relative; overflow: hidden;
+}
+.cta-banner::before {
+  content: ''; position: absolute; top: -50%; left: -20%;
+  width: 600px; height: 600px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(232,168,56,.1), transparent 70%);
+}
+.cta-banner h2 {
+  font-family: var(--font-display); font-size: clamp(1.8rem,3.5vw,2.8rem);
+  color: #fff; font-weight: 400; margin-bottom: 16px; position: relative;
+}
+.cta-banner h2 em { color: var(--sun-light); font-style: italic; }
+.cta-banner p {
+  color: rgba(255,255,255,.6); max-width: 520px; margin: 0 auto 32px; font-size: .95rem;
+}
+
+/* ─── IMPRESSUM ─── */
+.impressum-section { background: var(--sky-pale); }
+.impressum-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.impressum-block { background: #fff; border-radius: 6px; padding: 28px; border: 1px solid var(--stone-200); }
+.impressum-block h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; color: var(--sky); margin-bottom: 12px; }
+.impressum-block p { font-size: .85rem; color: var(--stone-600); line-height: 1.7; margin-bottom: 8px; }
+
+/* ─── FOOTER ─── */
+.site-footer {
+  background: linear-gradient(180deg, #1c1917 0%, #141210 100%);
+  color: rgba(255,255,255,.5); padding: 64px clamp(20px,5vw,48px) 32px;
+}
+.footer-inner {
+  max-width: 1200px; margin: 0 auto;
+  display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px;
+}
+.footer-col h4 {
+  font-family: var(--font-display); font-size: 1.1rem; color: #fff;
+  font-weight: 600; margin-bottom: 18px;
+}
+.footer-col p { font-size: .82rem; line-height: 1.7; }
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 8px; }
+.footer-col ul a {
+  font-size: .82rem; color: rgba(255,255,255,.5);
+  text-decoration: none; transition: color .3s;
+}
+.footer-col ul a:hover { color: var(--sun); }
+.footer-bottom {
+  max-width: 1200px; margin: 48px auto 0;
+  padding-top: 24px; border-top: 1px solid rgba(255,255,255,.08);
+  display: flex; justify-content: space-between; align-items: center; font-size: .75rem;
+}
+.footer-social { display: flex; gap: 16px; }
+.footer-social a {
+  color: rgba(255,255,255,.4); text-decoration: none; font-size: .8rem; transition: color .3s;
+}
+.footer-social a:hover { color: var(--sun); }
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 1024px) {
+  .hotel-categories { grid-template-columns: repeat(2, 1fr); }
+  .tips-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 768px) {
+  .nav-subtitle { display: none; }
+  .nav-inner { justify-content: space-between; padding: 12px clamp(20px,4vw,48px); }
+  .nav-links {
+    display: flex !important; position: absolute; top: var(--nav-h); left: 0; right: 0;
+    background: rgba(253,249,244,.97); backdrop-filter: blur(20px);
+    flex-direction: column; padding: 20px; gap: 4px;
+    transform: translateY(-10px); opacity: 0; pointer-events: none;
+    transition: opacity .3s ease, transform .3s ease;
+    box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  }
+  .nav-links.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+  .nav-links a { color: var(--stone-700) !important; padding: 12px 16px !important; }
+  .nav-guides {
+    border-left: none; margin-left: 0; padding-left: 0; padding-top: 12px;
+    margin-top: 8px; border-top: 1px solid rgba(0,0,0,.06);
+    justify-content: center; flex-wrap: wrap;
+  }
+  .nav-guides a { font-size: .7rem !important; padding: 6px 14px !important; }
+  .mobile-toggle { display: block; }
+  .intro-grid { grid-template-columns: 1fr; gap: 40px; }
+  .info-grid { grid-template-columns: 1fr; }
+  .card-grid { grid-template-columns: 1fr; }
+  .faq-grid { grid-template-columns: 1fr; }
+  .hotel-categories { grid-template-columns: 1fr; }
+  .tips-grid { grid-template-columns: 1fr; }
+  .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+  .impressum-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+}
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+.fade-up {
+  opacity: 0; transform: translateY(24px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://www.friendlyhotels.it/#kurt-wallant",
+      "name": "Kurt Wallant",
+      "jobTitle": "Fondatore di Friendly Hotels e Dolomites and Secret Places",
+      "description": "Esperto delle Dolomiti con oltre 15 anni di esperienza. Fondatore della community Dolomites and Secret Places (45.000+ membri). Ha testato personalmente oltre 80 hotel e percorso più di 2.000 km di sentieri.",
+      "knowsAbout": [
+        "Val Gardena",
+        "Dolomiti",
+        "Hotel Alto Adige",
+        "Escursioni Alpine",
+        "Turismo sostenibile",
+        "Cultura ladina",
+        "Mobilità in montagna"
+      ],
+      "url": "https://www.friendlyhotels.it",
+      "sameAs": [
+        "https://www.facebook.com/groups/dolomitessecretplaces"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.friendlyhotels.it/#organization",
+      "name": "Friendly Hotels - Val Gardena",
+      "alternateName": "Dolomites and Secret Places",
+      "url": "https://www.friendlyhotels.it",
+      "founder": {
+        "@id": "https://www.friendlyhotels.it/#kurt-wallant"
+      },
+      "sameAs": [
+        "https://www.facebook.com/groups/dolomitessecretplaces"
+      ]
+    },
+    {
+      "@type": "TouristDestination",
+      "@id": "https://www.friendlyhotels.it/#val-gardena",
+      "name": "Val Gardena",
+      "alternateName": [
+        "Gröden",
+        "Gherdëina"
+      ],
+      "description": "Valle delle Dolomiti in Alto Adige, patrimonio UNESCO. Comprende Ortisei (1.236 m), Santa Cristina (1.428 m) e Selva di Val Gardena (1.563 m).",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "46.5574",
+        "longitude": "11.7746"
+      },
+      "containedInPlace": {
+        "@type": "AdministrativeArea",
+        "name": "Alto Adige, Italia"
+      },
+      "isPartOf": {
+        "@type": "Place",
+        "name": "Dolomiti UNESCO"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Friendly Hotels",
+          "item": "https://www.friendlyhotels.it/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Family Friendly",
+          "item": "https://www.friendlyhotels.it/family/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "headline": "FamilyFriendly — Vacanza in Famiglia nelle Dolomiti",
+      "description": "Guida indipendente per viaggiare con bambini in Val Gardena. 20 hotel family-friendly, 10 escursioni con età consigliata, parchi gioco in quota e Q&A con Kurt Wallant.",
+      "author": {
+        "@id": "https://www.friendlyhotels.it/#kurt-wallant"
+      },
+      "publisher": {
+        "@id": "https://www.friendlyhotels.it/#organization"
+      },
+      "datePublished": "2026-03-30",
+      "dateModified": "2026-04-29T10:00:00+02:00",
+      "inLanguage": "it",
+      "about": {
+        "@id": "https://www.friendlyhotels.it/#val-gardena"
+      },
+      "mentions": [{"@type": "Place", "name": "Sentiero delle Leggende"}, {"@type": "Place", "name": "Monte Pana"}, {"@type": "Place", "name": "Compaccio"}, {"@type": "Place", "name": "Resciesa"}],
+      "keywords": "family hotel Val Gardena, vacanza bambini Dolomiti, hotel famiglie Ortisei, escursioni bambini Val Gardena, parchi gioco quota",
+      "mainEntityOfPage": "https://www.friendlyhotels.it/family/",
+      "url": "https://www.friendlyhotels.it/family/"
+    },
+    {
+      "@type": "FAQPage",
+      "speakable": {"@type": "SpeakableSpecification", "cssSelector": [".faq-item"]},
+      "name": "FAQ — Family Friendly",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quali sono i sentieri più sicuri per bambini piccoli?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La Val d'Anna a Ortisei, il Sentiero della Ferrovia tra Ortisei e Santa Cristina e il Monte Pana sono i tre percorsi più sicuri: larghi, ombreggiati, senza tratti esposti."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso portare un passeggino da trekking sui sentieri?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì, su percorsi adatti: l'Alpe di Siusi, il Sentiero della Ferrovia e alcuni tratti del Monte Pana sono perfetti per passeggini da trekking."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual è il periodo migliore per una vacanza in famiglia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Giugno e settembre: clima perfetto, meno affollamento, prezzi più equilibrati. Luglio e agosto vanno bene scegliendo sentieri ombreggiati."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto può camminare un bambino in montagna?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un bambino di 4-6 anni può fare 3-5 km, uno di 7-10 anni anche 6-8 km. In montagna comanda il sorriso, non il cronometro."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ci sono parchi gioco in quota?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì: Monte Pana Playground, Col Raiser area giochi, Alpe di Siusi Compaccio e Ortisei Val d'Anna. Perfetti per alternare camminate e gioco."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","name":"Escursioni per Famiglie in Val Gardena — FamilyFriendly","itemListElement":[
+{"@type":"ListItem","position":1,"item":{"@type":"TouristTrip","name":"Sentiero della Val d'Anna","description":"Passeggiata facile con percorso Kneipp per bambini. Perfetta con passeggino.","touristType":"Famiglie con bambini"}},
+{"@type":"ListItem","position":2,"item":{"@type":"TouristTrip","name":"Monte Pana → Città dei Sassi","description":"Avventura per bambini tra formazioni rocciose uniche. Sentiero tematico.","touristType":"Famiglie con bambini"}},
+{"@type":"ListItem","position":3,"item":{"@type":"TouristTrip","name":"Col Raiser → Rifugio Firenze (prima parte)","description":"Funivia e passeggiata panoramica. Adatta ai bambini nella prima parte.","touristType":"Famiglie con bambini"}},
+{"@type":"ListItem","position":4,"item":{"@type":"TouristTrip","name":"Compaccio → Panorama","description":"Alpe di Siusi con vista Sciliar. Prati fioriti, spazi aperti per giocare.","touristType":"Famiglie con bambini"}},
+{"@type":"ListItem","position":5,"item":{"@type":"TouristTrip","name":"Resciesa – Anello panoramico","description":"Funicolare e sentiero ad alta quota. Vista 360° adatta a bambini dai 6 anni.","touristType":"Famiglie con bambini"}},
+{"@type":"ListItem","position":6,"item":{"@type":"TouristTrip","name":"Sentiero della Ferrovia","description":"Il vecchio tracciato ferroviario. Pianeggiante e adatto ai passeggini.","touristType":"Famiglie con bambini"}},
+{"@type":"ListItem","position":7,"item":{"@type":"TouristTrip","name":"Vallunga","description":"Valle glaciale pianeggiante. Perfetta per famiglie con bambini di tutte le età.","touristType":"Famiglie con bambini"}},
+{"@type":"ListItem","position":8,"item":{"@type":"TouristTrip","name":"Bosco di San Giacomo","description":"Passeggiata nel bosco con area gioco naturale. Ideale per i più piccoli.","touristType":"Famiglie con bambini"}},
+{"@type":"ListItem","position":9,"item":{"@type":"TouristTrip","name":"Sentiero delle Leggende","description":"Percorso tematico con storie ladine. I bambini imparano giocando.","touristType":"Famiglie con bambini"}},
+{"@type":"ListItem","position":10,"item":{"@type":"TouristTrip","name":"Malga Sanon","description":"Escursione con pranzo in malga. Piatti tipici e animali da fattoria per i bambini.","touristType":"Famiglie con bambini"}}
+]}
+</script>
+</head>
+<body class="lang-it">
+<a data-it href="#chi-e-kurt" class="skip-link">Salta al contenuto principale</a>
+<a data-en href="#chi-e-kurt" class="skip-link">Skip to main content</a>
+<!-- ════════ NAVBAR ════════ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">Kurt Wallant <span>/ FamilyFriendly</span></a>
+    <ul class="nav-links" id="nav-links">      <li data-it><a href="#chi-e-kurt">Chi è Kurt</a></li><li data-en><a href="#chi-e-kurt">About Kurt</a></li>
+      <li data-it><a href="#cosa-fare">Cosa Fare</a></li><li data-en><a href="#cosa-fare">What to Do</a></li>
+      <li data-it><a href="#consigli">Consigli</a></li><li data-en><a href="#consigli">Tips</a></li>
+      <li data-it><a href="#escursioni">Escursioni</a></li><li data-en><a href="#escursioni">Hikes</a></li>
+      <li data-it><a href="#hotel">Hotel</a></li><li data-en><a href="#hotel">Hotels</a></li>
+      <li data-it><a href="#checklist">Checklist</a></li><li data-en><a href="#checklist">Checklist</a></li>
+      <li data-it><a href="#faq">Q&A</a></li><li data-en><a href="#faq">Q&A</a></li>
+      <li data-it><a href="#impressum">Impressum</a></li><li data-en><a href="#impressum">Impressum</a></li>
+      <li class="lang-toggle-wrap"><button class="lang-btn active" id="btn-it" onclick="setLang('it')">IT</button><button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button></li>
+      <li class="nav-guides-wrap" style="display:contents;">
+        <div class="nav-guides">
+          <a href="index.html" class="g-home" target="_blank" rel="noopener noreferrer">Home</a>
+          <a href="dog.html" class="g-dog">Dog</a>
+          <a href="bike.html" class="g-bike">Bike</a>
+          <a href="bus.html" class="g-bus">Bus</a>
+        </div>
+      </li>
+    </ul>
+    <button class="mobile-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="#home" class="nav-subtitle">Kurt Wallant / FamilyFriendly</a>
+  </div>
+</nav>
+
+<!-- ════════ HERO ════════ -->
+<header class="hero" id="home" role="img" aria-label="Panorama delle Dolomiti in Val Gardena, vacanza in famiglia">
+  <div class="hero-content">
+    <div data-it class="hero-eyebrow">Val Gardena · Alpe di Siusi · Dolomiti</div>
+    <div data-en class="hero-eyebrow">Val Gardena · Alpe di Siusi · Dolomites</div>
+    <h1 data-it>Dolomiti<br><em>con la famiglia</em></h1>
+    <h1 data-en>Dolomites<br><em>with the family</em></h1>
+    <p data-it class="hero-sub">La guida indipendente per una vacanza in famiglia nelle Dolomiti. Val Gardena, Alpe di Siusi e dintorni: tutto ciò che serve per vivere la montagna con bambini e ragazzi.</p>
+    <p data-en class="hero-sub">The independent guide for a family holiday in the Dolomites. Val Gardena, Alpe di Siusi and surroundings: everything you need to experience the mountains with children.</p>
+    <div class="hero-cta">
+      <a data-it href="#escursioni" class="btn btn-primary">Scopri i Sentieri</a>
+      <a data-en href="#escursioni" class="btn btn-primary">Explore the Trails</a>
+      <a data-it href="#hotel" class="btn btn-outline">Hotel Family‑Friendly</a>
+      <a data-en href="#hotel" class="btn btn-outline">Family‑Friendly Hotels</a>
+    </div>
+  </div>
+</header>
+
+<main role="main">
+<article>
+
+<!-- ════════ CHI È KURT ════════ -->
+<section class="intro" id="chi-e-kurt">
+  <div class="section-inner">
+    <div class="intro-grid">
+      <div class="intro-img-wrap fade-up">
+        <img src="https://i.imgur.com/VvciqZH.jpeg" alt="Kurt Wallant, esperto delle Dolomiti e fondatore di FamilyFriendly.it" width="800" style="border-radius:12px;">
+        <div class="intro-img-accent"></div>
+      </div>
+      <div class="intro-text fade-up">
+        <div data-it class="section-eyebrow">Guida, escursionista, voce delle Dolomiti</div>
+        <div data-en class="section-eyebrow">Guide, hiker, voice of the Dolomites</div>
+        <h2 data-it class="section-title">Chi è <em>Kurt Wallant</em></h2>
+        <h2 data-en class="section-title">Who is <em>Kurt Wallant</em></h2>
+        <p class="article-meta" style="font-size:.78rem; color: var(--stone-400); margin-bottom:16px; letter-spacing:.05em;">
+          <span data-it>Ultimo aggiornamento:</span><span data-en>Last updated:</span> <time datetime="2026-04-29">29 aprile 2026</time>
+        </p>
+        <p>Kurt Wallant è cresciuto in un maso tra Ortisei e Castelrotto, in una <strong>famiglia numerosa</strong> dove la montagna era parte della vita quotidiana. Da bambino passava le giornate tra boschi, pascoli e sentieri, imparando presto a riconoscere i cambiamenti del meteo, i comportamenti degli animali e i percorsi più sicuri.</p>
+        <p>Oggi è considerato una delle <strong>voci più affidabili della valle</strong> per chi viaggia con bambini: conosce ogni sentiero, ogni malga e ogni scorciatoia utile per evitare fatica inutile. Per lui la montagna è un luogo di crescita, scoperta e rispetto.</p>
+        <div class="signature">— Kurt Wallant</div>
+      </div>
+    </div>
+    <div style="margin-top:60px; max-width:820px;">
+      <p style="font-size:.95rem; color:var(--stone-600); line-height:1.75;">Le Dolomiti sono un luogo magico per le famiglie: panorami spettacolari, sentieri sicuri, parchi gioco in quota, malghe accoglienti e attività pensate per tutte le età.</p>
+      <p style="font-size:.95rem; color:var(--stone-600); line-height:1.75;">Ma come ogni ambiente alpino, richiedono <strong>attenzione, buon senso e una pianificazione intelligente</strong>, soprattutto quando si viaggia con bambini piccoli.</p>
+      <p style="font-size:.95rem; color:var(--stone-600); line-height:1.75;">FamilyFriendly.it nasce per offrire <strong>informazioni neutrali, pratiche e aggiornate</strong>, senza toni promozionali, per aiutare le famiglie a vivere una vacanza serena, divertente e sicura.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ COSA FARE / NON FARE ════════ -->
+<section class="info-section" id="cosa-fare">
+  <div class="section-inner">
+    <div data-it class="section-eyebrow fade-up">Guida Pratica</div>
+    <div data-en class="section-eyebrow fade-up">Practical Guide</div>
+    <h2 data-it class="section-title fade-up">Cosa puoi fare <em>e cosa no</em></h2>
+    <h2 data-en class="section-title fade-up">What you can do <em>and what not</em></h2>
+    <p data-it class="section-desc fade-up">Conoscere le opportunità e i limiti è il primo passo per una vacanza in famiglia sicura e divertente.</p>
+    <p data-en class="section-desc fade-up">Knowing the opportunities and limits is the first step to a safe and fun family holiday.</p>
+    <div class="info-grid">
+      <div class="info-block positive fade-up">
+        <span class="block-icon">✅</span>
+        <h3 data-it>Cosa puoi fare con la tua famiglia</h3><h3 data-en>What you can do with your family</h3>
+        <ul>
+          <li><strong>Escursioni facili e passeggiate tematiche</strong> — La valle offre decine di percorsi adatti ai bambini: sentieri nel bosco, itinerari tematici, percorsi con giochi in legno e aree picnic.</li>
+          <li><strong>Impianti di risalita comodi e sicuri</strong> — Cabinovie e seggiovie moderne permettono di raggiungere altipiani e panorami senza fatica. Perfetti per famiglie con passeggini da trekking.</li>
+          <li><strong>Parchi gioco in quota</strong> — Monte Pana, Alpe di Siusi, Resciesa e Col Raiser ospitano aree gioco naturali, scivoli, altalene e percorsi avventura.</li>
+          <li><strong>Rifugi e malghe family‑friendly</strong> — Molti rifugi offrono menù per bambini, terrazze sicure e piccoli spazi gioco.</li>
+          <li><strong>Attività educative e culturali</strong> — Musei, percorsi naturalistici, fattorie didattiche e laboratori creativi.</li>
+        </ul>
+      </div>
+      <div class="info-block negative fade-up">
+        <span class="block-icon">🚫</span>
+        <h3 data-it>Cosa è sconsigliato fare con bambini</h3><h3 data-en>What's not recommended with children</h3>
+        <ul>
+          <li><strong>Affrontare sentieri esposti o ferrate</strong> — Non sono adatti ai bambini, anche se accompagnati.</li>
+          <li><strong>Sottovalutare il meteo</strong> — In montagna cambia rapidamente: temporali, vento e calo di temperatura possono creare situazioni rischiose.</li>
+          <li><strong>Camminare nelle ore più calde</strong> — Il sole in quota è forte: meglio partire presto o scegliere percorsi ombreggiati.</li>
+          <li><strong>Spingere troppo i bambini</strong> — La montagna deve essere un piacere, non una prova di resistenza.</li>
+          <li><strong>Lasciare i bambini avvicinarsi al bestiame</strong> — Mucche e cavalli possono reagire in modo imprevedibile.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="kurt-tip fade-up">
+      <div data-it class="tip-label">🧭 Il consiglio di Kurt Wallant per le famiglie</div><div data-en class="tip-label">🧭 Kurt Wallant's Advice for Families</div>
+      <p>"In montagna i bambini non hanno bisogno di grandi imprese: hanno bisogno di tempo. Tempo per guardare, toccare, fermarsi, fare domande. Scegli sentieri semplici, lascia spazio alla curiosità e non avere fretta. La montagna, vista con gli occhi dei bambini, è più grande e più bella."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ CONSIGLI PRATICI ════════ -->
+<section class="tips-section" id="consigli">
+  <div class="section-inner">
+    <div data-it class="section-eyebrow fade-up">Consigli Pratici</div>
+    <div data-en class="section-eyebrow fade-up">Practical Tips</div>
+    <h2 data-it class="section-title fade-up">Per una vacanza <em>in famiglia</em></h2>
+    <h2 data-en class="section-title fade-up">For a <em>family</em> holiday</h2>
+    <p data-it class="section-desc fade-up">Piccole accortezze che fanno la differenza quando si viaggia con bambini nelle Dolomiti.</p>
+    <p data-en class="section-desc fade-up">Small precautions that make a difference when travelling with children in the Dolomites.</p>
+    <div class="tips-grid">
+      <div class="tip-card fade-up">
+        <div class="tip-icon">💧</div>
+        <p>Portare sempre acqua, cappellino e crema solare</p>
+      </div>
+      <div class="tip-card fade-up">
+        <div class="tip-icon">🥾</div>
+        <p>Usare scarpe da trekking anche per i bambini</p>
+      </div>
+      <div class="tip-card fade-up">
+        <div class="tip-icon">👕</div>
+        <p>Avere un cambio completo nello zaino</p>
+      </div>
+      <div class="tip-card fade-up">
+        <div class="tip-icon">🌳</div>
+        <p>Preferire percorsi con ombra e punti di sosta</p>
+      </div>
+      <div class="tip-card fade-up">
+        <div class="tip-icon">🕐</div>
+        <p>Controllare sempre gli orari degli impianti</p>
+      </div>
+      <div class="tip-card fade-up">
+        <div class="tip-icon">👶</div>
+        <p>Evitare i sentieri troppo affollati se i bambini sono piccoli</p>
+      </div>
+      <div class="tip-card fade-up">
+        <div class="tip-icon">⛰️</div>
+        <p>Insegnare ai bambini le regole base della montagna</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ 10 ESCURSIONI ════════ -->
+<section class="hikes-section" id="escursioni">
+  <div class="section-inner">
+    <div data-it class="section-eyebrow fade-up">Sentieri per Famiglie</div>
+    <div data-en class="section-eyebrow fade-up">Trails for Families</div>
+    <h2 data-it class="section-title fade-up">10 escursioni <em>family‑friendly</em></h2>
+    <h2 data-en class="section-title fade-up">10 <em>family‑friendly</em> hikes</h2>
+    <p data-it class="section-desc fade-up">Percorsi sicuri, accessibili, panoramici e ricchi di punti di interesse, senza tratti esposti o difficoltà tecniche.</p>
+    <p data-en class="section-desc fade-up">Safe, accessible, panoramic routes rich in points of interest, without exposed sections or technical difficulties.</p>
+
+    <div class="hike-difficulty-tabs fade-up" role="group" aria-label="Filtra escursioni per difficoltà">
+      <button class="diff-tab active" data-filter="tutti" aria-pressed="true">Tutte</button>
+      <button class="diff-tab" data-filter="facile" aria-pressed="false" data-it>Facili</button><button data-en class="diff-tab" data-filter="facile" aria-pressed="false">Easy</button>
+      <button class="diff-tab" data-filter="media" aria-pressed="false">Medie</button>
+    </div>
+    <p id="hikes-live" aria-live="polite" aria-atomic="true" class="sr-only"></p>
+
+    <div class="card-grid" id="hikes-grid">
+      <div class="card fade-up" onclick="window.open('https://tripplanner.valgardena.it/', '_blank')" data-difficulty="facile">
+        <div class="card-img"><img src="https://i.imgur.com/CNnqtiS.jpeg" alt="Sentiero della Val d'Anna Ortisei" loading="lazy" width="700" height="467"></div>
+        <div class="card-body">
+          <div data-it class="card-tag">🟢 Facile · Ortisei · 1–2 ore · Età: 3+</div><div data-en class="card-tag">🟢 Easy · Ortisei · 1–2 hrs · Age: 3+</div>
+          <h3>1. Sentiero della Val d'Anna</h3>
+          <div class="card-features">☀️ Ombra · 💧 Ruscelli · 🎠 Aree gioco · 🍽️ Bar/ristoro</div>
+          <p>Percorso pianeggiante e sicuro con possibilità di giocare vicino all'acqua. Presenza di parco giochi e aree picnic.</p>
+          <p class="card-note">⚠ Molto frequentato in alta stagione.</p>
+        </div>
+      </div>
+      <div class="card fade-up" onclick="window.open('https://tripplanner.valgardena.it/', '_blank')" data-difficulty="facile">
+        <div class="card-img"><img src="https://i.imgur.com/UMRL3jc.jpeg" alt="Monte Pana Città dei Sassi" loading="lazy" width="700" height="467"></div>
+        <div class="card-body">
+          <div data-it class="card-tag">🟢 Facile · S. Cristina · 1,5–2 ore · Età: 4+</div><div data-en class="card-tag">🟢 Easy · S. Cristina · 1.5–2 hrs · Age: 4+</div>
+          <h3>2. Monte Pana → Città dei Sassi</h3>
+          <div class="card-features">🌿 Prati · 🪨 Massi giganti · ☀️ Zone d'ombra</div>
+          <p>I bambini adorano arrampicarsi sui massi. Percorso ampio e pianeggiante con vista spettacolare sul Sassolungo.</p>
+          <p class="card-note">⚠ Evitare le ore più calde, zona molto esposta al sole.</p>
+        </div>
+      </div>
+      <div class="card fade-up" onclick="window.open('https://tripplanner.valgardena.it/', '_blank')" data-difficulty="media">
+        <div class="card-img"><img src="https://i.imgur.com/FH3lYWi.png" alt="Col Raiser Rifugio Firenze" loading="lazy" width="700" height="467"></div>
+        <div class="card-body">
+          <div data-it class="card-tag">🟡 Facile–Media · S. Cristina · 1–2 ore · Età: 5+</div><div data-en class="card-tag">🟡 Easy–Moderate · S. Cristina · 1–2 hrs · Age: 5+</div>
+          <h3>3. Col Raiser → Rifugio Firenze (prima parte)</h3>
+          <div class="card-features">Panorami aperti · 🛤️ Sentiero largo</div>
+          <p>Si raggiunge quota senza fatica grazie alla cabinovia. Vista incredibile sulle Odle. Terreno sicuro e ben segnalato.</p>
+          <p class="card-note">⚠ Evitare la parte finale se i bambini sono piccoli (diventa più ripida).</p>
+        </div>
+      </div>
+      <div class="card fade-up" onclick="window.open('https://tripplanner.valgardena.it/', '_blank')" data-difficulty="facile">
+        <div class="card-img"><img src="https://i.imgur.com/OanZ9AB.png" alt="Compaccio Alpe di Siusi panorama" loading="lazy" width="700" height="467"></div>
+        <div class="card-body">
+          <div data-it class="card-tag">🟢 Facile · Alpe di Siusi · 1–1,5 ore · Tutte le età</div><div data-en class="card-tag">🟢 Easy · Alpe di Siusi · 1–1.5 hrs · All ages</div>
+          <h3>4. Compaccio → Panorama</h3>
+          <div class="card-features">👶 Adatto ai passeggini · 🌾 Ampi prati</div>
+          <p>Percorso largo e regolare con possibilità di sosta in malga. Ideale per foto e giochi nei prati.</p>
+          <p class="card-note">⚠ Molto esposto al sole.</p>
+        </div>
+      </div>
+      <div class="card fade-up" onclick="window.open('https://tripplanner.valgardena.it/', '_blank')" data-difficulty="facile">
+        <div class="card-img"><img src="https://i.imgur.com/JD44Gbv.jpeg" alt="Resciesa anello panoramico" loading="lazy" width="700" height="467"></div>
+        <div class="card-body">
+          <div data-it class="card-tag">🟢 Facile · Ortisei · 1,5 ore · Età: 5+</div><div data-en class="card-tag">🟢 Easy · Ortisei · 1.5 hrs · Age: 5+</div>
+          <h3>5. Resciesa – Anello panoramico</h3>
+          <div class="card-features">🌬️ Altopiano ventilato · Vista Sassolungo</div>
+          <p>Percorso circolare senza pericoli con panorama costante. Possibilità di avvistare animali selvatici.</p>
+          <p class="card-note">⚠ Vento forte nei giorni di maltempo.</p>
+        </div>
+      </div>
+      <div class="card fade-up" onclick="window.open('https://tripplanner.valgardena.it/', '_blank')" data-difficulty="facile">
+        <div class="card-img"><img src="https://i.imgur.com/o3H6sKe.png" alt="Sentiero della Ferrovia Val Gardena" loading="lazy" width="700" height="467"></div>
+        <div class="card-body">
+          <div data-it class="card-tag">🟢 Facilissimo · Ortisei → S. Cristina · 1–1,5 ore · Tutte le età</div><div data-en class="card-tag">🟢 Very Easy · Ortisei → S. Cristina · 1–1.5 hrs · All ages</div>
+          <h3>6. Sentiero della Ferrovia</h3>
+          <div class="card-features">👶 Adatto ai passeggini · ☀️ Ombreggiato · 🚌 Rientro in bus</div>
+          <p>Ideale per bambini piccoli. Fondo compatto e sicuro. Possibilità di rientrare con autobus.</p>
+          <p class="card-note">⚠ Alcuni tratti possono essere affollati.</p>
+        </div>
+      </div>
+      <div class="card fade-up" onclick="window.open('https://tripplanner.valgardena.it/', '_blank')" data-difficulty="facile">
+        <div class="card-img"><img src="https://i.imgur.com/v7jWMJf.png" alt="Vallunga Selva Val Gardena" loading="lazy" width="700" height="467"></div>
+        <div class="card-body">
+          <div data-it class="card-tag">🟢 Facile · Selva · 1–3 ore · Tutte le età</div><div data-en class="card-tag">🟢 Easy · Selva · 1–3 hrs · All ages</div>
+          <h3>7. Vallunga</h3>
+          <div class="card-features">🌳 Valle ampia · 🌿 Prati · ☀️ Ombra nelle prime ore</div>
+          <p>Spazio per correre e giocare. Atmosfera tranquilla e rilassante. Percorso lineare e intuitivo.</p>
+          <p class="card-note">⚠ Presenza di fauna (cervi): mantenere i bambini vicini.</p>
+        </div>
+      </div>
+      <div class="card fade-up" onclick="window.open('https://tripplanner.valgardena.it/', '_blank')" data-difficulty="facile">
+        <div class="card-img"><img src="https://i.imgur.com/4HK5L4f.png" alt="Bosco di San Giacomo" loading="lazy" width="700" height="467"></div>
+        <div class="card-body">
+          <div data-it class="card-tag">🟢 Facile · Ortisei · 1 ora · Età: 3+</div><div data-en class="card-tag">🟢 Easy · Ortisei · 1 hr · Age: 3+</div>
+          <h3>8. Bosco di San Giacomo</h3>
+          <div class="card-features">☀️ Ombra · 🌲 Natura · 🎠 Parco giochi</div>
+          <p>Ideale nelle giornate calde. Percorso breve ma suggestivo. Presenza di aree gioco e panchine.</p>
+          <p class="card-note">⚠ Alcuni tratti possono essere scivolosi dopo la pioggia.</p>
+        </div>
+      </div>
+      <div class="card fade-up" onclick="window.open('https://tripplanner.valgardena.it/', '_blank')" data-difficulty="facile">
+        <div class="card-img"><img src="https://i.imgur.com/JZFOsio.png" alt="Sentiero delle Leggende" loading="lazy" width="700" height="467"></div>
+        <div class="card-body">
+          <div data-it class="card-tag">🟢 Facile · Castelrotto · 1–1,5 ore · Età: 4+</div><div data-en class="card-tag">🟢 Easy · Castelrotto · 1–1.5 hrs · Age: 4+</div>
+          <h3>9. Sentiero delle Leggende</h3>
+          <div class="card-features">📖 Pannelli illustrati · 🌳 Bosco · 🎭 Percorso tematico</div>
+          <p>I bambini seguono la storia passo dopo passo. Percorso educativo e divertente. Ombra costante.</p>
+          <p class="card-note">⚠ Verificare l'apertura stagionale.</p>
+        </div>
+      </div>
+      <div class="card fade-up" onclick="window.open('https://tripplanner.valgardena.it/', '_blank')" data-difficulty="facile">
+        <div class="card-img"><img src="https://i.imgur.com/BEe8Mnk.jpeg" alt="Malga Sanon escursione famiglia" loading="lazy" width="700" height="467"></div>
+        <div class="card-body">
+          <div data-it class="card-tag">🟢 Facile · Alpe di Siusi · 1 ora · Tutte le età</div><div data-en class="card-tag">🟢 Easy · Alpe di Siusi · 1 hr · All ages</div>
+          <h3>10. Malga Sanon</h3>
+          <div class="card-features">🐄 Animali · 🎠 Area gioco · 🌾 Prato enorme</div>
+          <p>Presenza di animali da fattoria e area gioco ben tenuta. Percorso breve e panoramico.</p>
+          <p class="card-note">⚠ Molto frequentato nelle ore di pranzo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ HOTEL ════════ -->
+<section class="hotels-section" id="hotel">
+  <div class="section-inner">
+    <div data-it class="section-eyebrow fade-up">Dove Dormire</div>
+    <div data-en class="section-eyebrow fade-up">Where to Stay</div>
+    <h2 data-it class="section-title fade-up">Strutture <em>family‑friendly</em></h2>
+    <h2 data-en class="section-title fade-up"><em>Family‑friendly</em> properties</h2>
+    <p data-it class="section-desc fade-up">Informazioni neutrali e non pubblicitarie. Nessuna commissione, nessuna prenotazione. Solo consigli trasparenti per scegliere la struttura giusta per la tua famiglia.</p>
+    <p data-en class="section-desc fade-up">Neutral, non-promotional information. No commissions, no bookings. Just transparent advice to choose the right property for your family.</p>
+
+    <!-- ORTISEI -->
+    <div class="zone-header fade-up"><div class="zone-sub">Urtijëi</div><h3>Ortisei</h3></div>
+    <div class="hotel-categories">
+      <div class="hotel-cat fade-up">
+        <h3>Cavallino Bianco Family Spa Grand Hotel</h3>
+        <p>Uno dei family hotel più noti d'Europa, completamente dedicato alle famiglie con bambini di ogni età.</p>
+        <p class="hotel-pro">✔ Miniclub enorme, piscina per bambini, camere family, animazione professionale.</p>
+        <p class="hotel-con">Prezzo elevato; molto richiesto (prenotare con largo anticipo).</p>
+        <a href="https://www.cavallino-bianco.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Alpenheim</h3>
+        <p>Hotel accogliente con area wellness e camere spaziose.</p>
+        <p class="hotel-pro">✔ Posizione tranquilla, piscina interna, camere familiari.</p>
+        <p class="hotel-con">Non dispone di area gioco esterna.</p>
+        <a href="https://www.alpenheim.it" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Luna Mondschein</h3>
+        <p>Struttura elegante con ampio giardino e piscina interna.</p>
+        <p class="hotel-pro">✔ Camere family, giardino, vicinanza al centro.</p>
+        <p class="hotel-con">Atmosfera più tranquilla che "giocosa".</p>
+        <a href="https://www.lunamondschein.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Stetteneck</h3>
+        <p>Hotel storico in pieno centro, ideale per famiglie che vogliono muoversi a piedi.</p>
+        <p class="hotel-pro">✔ Camere ampie, posizione strategica, servizi per bambini.</p>
+        <p class="hotel-con">Niente area gioco esterna.</p>
+        <a href="https://www.stetteneck.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Residence Villa Stella</h3>
+        <p>Appartamenti moderni e spaziosi, perfetti per famiglie che preferiscono autonomia.</p>
+        <p class="hotel-pro">✔ Cucina privata, posizione centrale, parcheggio.</p>
+        <p class="hotel-con">Nessun servizio alberghiero.</p>
+        <a href="https://www.villastella.bz" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+    </div>
+
+    <!-- SANTA CRISTINA -->
+    <div class="zone-header fade-up"><div class="zone-sub">S. Crestina</div><h3>Santa Cristina</h3></div>
+    <div class="hotel-categories">
+      <div class="hotel-cat fade-up">
+        <h3>Family Hotel Posta</h3>
+        <p>Hotel pensato per famiglie, con animazione, piscina e aree gioco.</p>
+        <p class="hotel-pro">✔ Miniclub, piscina interna, camere family.</p>
+        <p class="hotel-con">Molto richiesto in alta stagione.</p>
+        <a href="https://www.familyhotelposta.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Touring</h3>
+        <p>Hotel centrale con camere familiari e servizi per bambini.</p>
+        <p class="hotel-pro">✔ Posizione comoda, camere spaziose, cucina adatta ai piccoli.</p>
+        <p class="hotel-con">Spazi esterni limitati.</p>
+        <a href="https://www.touringhotel.it" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Interski</h3>
+        <p>Struttura tranquilla con piscina e area wellness.</p>
+        <p class="hotel-pro">✔ Piscina interna, camere family, vicinanza ai sentieri.</p>
+        <p class="hotel-con">Non dispone di area gioco esterna.</p>
+        <a href="https://www.interski.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+    </div>
+
+    <!-- SELVA -->
+    <div class="zone-header fade-up"><div class="zone-sub">Sëlva</div><h3>Selva di Val Gardena</h3></div>
+    <div class="hotel-categories">
+      <div class="hotel-cat fade-up">
+        <h3>Family Hotel Biancaneve</h3>
+        <p>Hotel dedicato alle famiglie, con piscina, miniclub e attività giornaliere.</p>
+        <p class="hotel-pro">✔ Animazione, piscina, camere family, posizione tranquilla.</p>
+        <p class="hotel-con">Struttura molto orientata ai bambini (meno adatta a chi cerca silenzio).</p>
+        <a href="https://www.hotelbiancaneve.it" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Oswald</h3>
+        <p>Hotel storico con camere ampie e servizi per famiglie.</p>
+        <p class="hotel-pro">✔ Posizione centrale, camere spaziose.</p>
+        <p class="hotel-con">Non ha aree gioco dedicate.</p>
+        <a href="https://www.hoteloswald.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Sun Valley</h3>
+        <p>Struttura moderna con piscina e camere familiari.</p>
+        <p class="hotel-pro">✔ Piscina interna, posizione centrale.</p>
+        <p class="hotel-con">Non è un family hotel "puro".</p>
+        <a href="https://www.sunvalley.it" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+    </div>
+
+    <!-- ALPE DI SIUSI -->
+    <div class="zone-header fade-up"><div class="zone-sub">Seiser Alm</div><h3>Alpe di Siusi</h3></div>
+    <div class="hotel-categories">
+      <div class="hotel-cat fade-up">
+        <h3>Sporthotel Sonne</h3>
+        <p>Hotel panoramico con ampi spazi esterni e servizi per famiglie.</p>
+        <p class="hotel-pro">✔ Posizione unica, area gioco, camere family.</p>
+        <p class="hotel-con">Accesso regolamentato all'altopiano.</p>
+        <a href="https://www.sporthotelsonne.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Icaro</h3>
+        <p>Struttura moderna con piscina e vista spettacolare.</p>
+        <p class="hotel-pro">✔ Piscina, area giochi, camere familiari.</p>
+        <p class="hotel-con">Prezzi più alti della media.</p>
+        <a href="https://www.hotelicaro.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Steger‑Dellai</h3>
+        <p>Hotel storico immerso nella natura, perfetto per famiglie attive.</p>
+        <p class="hotel-pro">✔ Sentieri immediati, camere ampie.</p>
+        <p class="hotel-con">Lontano dai centri abitati.</p>
+        <a href="https://www.stegerdellai.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+    </div>
+
+    <!-- CASTELROTTO -->
+    <div class="zone-header fade-up"><div class="zone-sub">Kastelruth</div><h3>Castelrotto</h3></div>
+    <div class="hotel-categories">
+      <div class="hotel-cat fade-up">
+        <h3>ABINEA Dolomiti Romantic Spa Hotel</h3>
+        <p>Hotel moderno con piscina interna ed esterna, adatto anche alle famiglie.</p>
+        <p class="hotel-pro">✔ Piscina, camere family, posizione comoda.</p>
+        <p class="hotel-con">Atmosfera più "wellness" che family.</p>
+        <a href="https://www.abinea.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Alpenroyal</h3>
+        <p>Struttura tradizionale con camere spaziose.</p>
+        <p class="hotel-pro">✔ Tranquillità, camere ampie.</p>
+        <p class="hotel-con">Non ha servizi specifici per bambini.</p>
+        <a href="https://www.alpenroyal.it" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+    </div>
+
+    <!-- LAION -->
+    <div class="zone-header fade-up"><div class="zone-sub">Lajen</div><h3>Laion</h3></div>
+    <div class="hotel-categories">
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Andechserhof</h3>
+        <p>Hotel panoramico con piscina e camere familiari.</p>
+        <p class="hotel-pro">✔ Tranquillità, piscina, camere spaziose.</p>
+        <p class="hotel-con">Distanza dai paesi gardenesi.</p>
+        <a href="https://www.andechserhof.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Bergblick</h3>
+        <p>Piccolo hotel familiare, semplice e accogliente.</p>
+        <p class="hotel-pro">✔ Atmosfera tranquilla, camere family.</p>
+        <p class="hotel-con">Servizi essenziali.</p>
+        <a href="https://www.bergblick.it" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+    </div>
+
+    <!-- FRAZIONI -->
+    <div class="zone-header fade-up"><div class="zone-sub">tra Ortisei e Castelrotto</div><h3>Frazioni e Dintorni</h3></div>
+    <div class="hotel-categories">
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Niblea</h3>
+        <p>Struttura moderna con piscina e camere familiari.</p>
+        <p class="hotel-pro">✔ Vista spettacolare, piscina, tranquillità.</p>
+        <p class="hotel-con">Strada ripida.</p>
+        <a href="https://www.niblea.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Albion</h3>
+        <p>Grande struttura con parco, piscina e servizi per famiglie.</p>
+        <p class="hotel-pro">✔ Piscina interna/esterna, area gioco, camere family.</p>
+        <p class="hotel-con">Supplementi per alcuni servizi.</p>
+        <a href="https://www.hotelalbion.it" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ CHECKLIST ════════ -->
+<section class="checklist-section" id="checklist">
+  <div class="section-inner">
+    <div data-it class="section-eyebrow fade-up">Prima di Partire</div>
+    <div data-en class="section-eyebrow fade-up">Before You Leave</div>
+    <h2 data-it class="section-title fade-up">Checklist <em>per famiglie</em></h2>
+    <h2 data-en class="section-title fade-up">Checklist <em>for families</em></h2>
+    <p data-it class="section-desc fade-up">Tutto ciò che serve nello zaino per una giornata in Val Gardena con i bambini.</p>
+    <p data-en class="section-desc fade-up">Everything you need in your backpack for a day in Val Gardena with children.</p>
+    <div class="checklist-grid">
+      <div class="checklist-item fade-up"><span class="check-icon">💧</span> Acqua fresca abbondante</div>
+      <div class="checklist-item fade-up"><span class="check-icon">🧢</span> Cappellino per il sole</div>
+      <div class="checklist-item fade-up"><span class="check-icon">🧴</span> Crema solare alta protezione</div>
+      <div class="checklist-item fade-up"><span class="check-icon">👕</span> Cambio completo</div>
+      <div class="checklist-item fade-up"><span class="check-icon">🍫</span> Snack energetici</div>
+      <div class="checklist-item fade-up"><span class="check-icon">🧥</span> Felpa e giacca antivento</div>
+      <div class="checklist-item fade-up"><span class="check-icon">🧻</span> Salviette umidificate</div>
+      <div class="checklist-item fade-up"><span class="check-icon">🗺️</span> Mappa o foto del percorso</div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ Q&A ════════ -->
+<section class="faq-section" id="faq">
+  <div class="section-inner">
+    <div data-it class="section-eyebrow fade-up">Domande Frequenti</div>
+    <div data-en class="section-eyebrow fade-up">Frequently Asked Questions</div>
+    <h2 data-it class="section-title fade-up">Q&A con <em>Kurt Wallant</em></h2>
+    <h2 data-en class="section-title fade-up">Q&A with <em>Kurt Wallant</em></h2>
+    <p data-it class="section-desc fade-up">Le 15 domande più frequenti delle famiglie in Val Gardena.</p>
+    <p data-en class="section-desc fade-up">The 15 most frequently asked questions by families in Val Gardena.</p>
+    <div class="faq-grid">
+      <div class="faq-item open fade-up">
+        <div class="faq-q">1. Quali sono i sentieri più sicuri per bambini piccoli?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «I tre percorsi più sicuri e adatti ai bambini piccoli sono la <strong>Val d'Anna a Ortisei</strong>, il <strong>Sentiero della Ferrovia</strong> tra Ortisei e Santa Cristina e il <strong>Monte Pana</strong>. Sono sentieri larghi, ombreggiati, senza tratti esposti e con punti di sosta frequenti. Perfetti per famiglie che vogliono camminare senza preoccupazioni.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div class="faq-q">2. Posso portare un passeggino da trekking sui sentieri?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «Sì, ma solo su percorsi adatti. L'<strong>Alpe di Siusi</strong>, il <strong>Sentiero della Ferrovia</strong> e alcuni tratti del <strong>Monte Pana</strong> sono perfetti per passeggini da trekking. Evita invece sentieri ripidi o con radici: la montagna non perdona l'improvvisazione.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div data-it class="faq-q">3. I rifugi della Val Gardena sono adatti ai bambini?</div><div data-en class="faq-q">3. Are Val Gardena mountain huts suitable for children?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «Molti sì. Rifugi come <strong>Rifugio Firenze</strong>, <strong>Rifugio Resciesa</strong>, <strong>Malga Sanon</strong> e <strong>Rifugio Odles</strong> sono abituati alle famiglie. Chiedi sempre se hanno seggioloni, menù baby e spazi esterni sicuri. In alta stagione meglio prenotare.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div data-it class="faq-q">4. Quanto può camminare un bambino in montagna?</div><div data-en class="faq-q">4. How far can a child walk in the mountains?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «Dipende dall'età e dall'abitudine. Un bambino di 4–6 anni può fare 3–5 km, uno di 7–10 anni anche 6–8 km. Ma ricorda: <strong>in montagna comanda il sorriso, non il cronometro</strong>. Se si stancano, si torna indietro senza drammi.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div data-it class="faq-q">5. Cosa devo mettere nello zaino per una giornata con i bambini?</div><div data-en class="faq-q">5. What should I pack for a day out with children?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «Acqua, cappellino, crema solare, un cambio completo, snack energetici, felpa, giacca antivento, salviette e una piccola coperta per sedersi nei prati. E non dimenticare una mappa o una foto del percorso: la montagna va rispettata.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div data-it class="faq-q">6. Come gestire il caldo in quota?</div><div data-en class="faq-q">6. How to handle the heat at altitude?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «Parti presto, cerca sentieri ombreggiati come la <strong>Val d'Anna</strong> o il <strong>Bosco di San Giacomo</strong>, e fai pause frequenti. Il sole delle Dolomiti è forte, soprattutto sopra i 1.500 metri. Non fidarti dell'aria fresca: le scottature arrivano lo stesso.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div data-it class="faq-q">7. È sicuro avvicinarsi alle mucche nei pascoli?</div><div data-en class="faq-q">7. Is it safe to approach cows in pastures?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «No. Le mucche sembrano tranquille, ma se hanno vitelli diventano protettive. Guardale da lontano, non attraversare mai il gruppo e non far correre i bambini vicino a loro. Le Dolomiti sono natura vera, non un parco tematico.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div data-it class="faq-q">8. Cosa devo fare se arriva un temporale improvviso?</div><div data-en class="faq-q">8. What should I do if a sudden storm arrives?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «Scendi subito di quota e rientra nel bosco o verso il paese. Le creste e gli altipiani come l'<strong>Alpe di Siusi</strong> o il <strong>Seceda</strong> diventano pericolosi. I bambini si spaventano facilmente e la montagna cambia in pochi minuti.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div data-it class="faq-q">9. Ci sono parchi gioco in quota?</div><div data-en class="faq-q">9. Are there playgrounds at altitude?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «Sì, e sono bellissimi. I migliori sono: <strong>Monte Pana Playground</strong>, <strong>Col Raiser – area giochi panoramica</strong>, <strong>Alpe di Siusi – Compaccio</strong>, <strong>Ortisei – Val d'Anna</strong>. Sono perfetti per alternare camminate e momenti di gioco.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div data-it class="faq-q">10. Qual è il periodo migliore per una vacanza in famiglia?</div><div data-en class="faq-q">10. When is the best time for a family holiday?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «Giugno e settembre sono i mesi ideali: clima perfetto, meno affollamento e prezzi più equilibrati. Luglio e agosto vanno bene, ma scegli sentieri ombreggiati e parti presto.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div data-it class="faq-q">11. I bambini possono usare gli impianti di risalita?</div><div data-en class="faq-q">11. Can children use the cable cars?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «Sì, gli impianti della Val Gardena sono moderni e sicuri. Ma tieni i bambini vicini: le cabine possono oscillare e le porte si chiudono automaticamente. Spiega loro cosa succede prima di salire.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div data-it class="faq-q">12. Dove posso trovare bagni lungo i sentieri?</div><div data-en class="faq-q">12. Where can I find toilets along the trails?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «Nei rifugi e nelle stazioni a monte degli impianti. Pianifica le soste: non tutti i sentieri hanno servizi, soprattutto quelli più naturali come la <strong>Vallunga</strong>.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div data-it class="faq-q">13. Cosa fare in caso di pioggia o brutto tempo?</div><div data-en class="faq-q">13. What to do in case of rain or bad weather?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «La valle è attrezzata: <strong>Museo Gherdëina</strong> a Ortisei, <strong>Piscina Mar Dolomit</strong>, biblioteche e laboratori creativi, gite brevi nei paesi. La montagna non è solo sole e sentieri: anche la cultura fa parte dell'esperienza.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div data-it class="faq-q">14. È necessario prenotare i rifugi?</div><div data-en class="faq-q">14. Is it necessary to book mountain huts?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «In alta stagione sì, soprattutto a pranzo. I rifugi più famosi come <strong>Firenze</strong>, <strong>Daniel</strong>, <strong>Sanon</strong> e <strong>Resciesa</strong> si riempiono rapidamente. Una telefonata evita attese inutili.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div data-it class="faq-q">15. Qual è l'errore più comune dei genitori in montagna?</div><div data-en class="faq-q">15. What's the most common mistake parents make in the mountains?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «Pensare che i bambini abbiano la nostra resistenza o la nostra motivazione. La montagna va vissuta al loro ritmo: più gioco, più pause, più curiosità. Se loro stanno bene, la vacanza diventa indimenticabile.»</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ CTA FINALE ════════ -->
+<section class="cta-banner">
+  <h2>La Val Gardena è un <em>parco avventura naturale</em></h2>
+  <p>Non serve fare grandi dislivelli: basta scegliere i sentieri giusti, ascoltare i bambini e rispettare la montagna. Le Dolomiti, viste con i loro occhi, sono ancora più belle.</p>
+  <div class="kurt-tip" style="max-width:600px; margin:0 auto; text-align:left; background:rgba(255,255,255,.06); border-color:var(--sun);">
+    <div class="tip-label" style="color:var(--sun-light);">🧭 Il consiglio finale di Kurt Wallant</div>
+    <p style="color:rgba(255,255,255,.8);">"La Val Gardena è un parco avventura naturale. Non serve fare grandi dislivelli: basta scegliere i sentieri giusti, ascoltare i bambini e rispettare la montagna. Le Dolomiti, viste con i loro occhi, sono ancora più belle."</p>
+  </div>
+</section>
+
+<!-- ════════ IMPRESSUM ════════ -->
+<section class="impressum-section" id="impressum">
+  <div class="section-inner">
+    <div data-it class="section-eyebrow fade-up">Informazioni Legali</div>
+    <div data-en class="section-eyebrow fade-up">Legal Information</div>
+    <h2 class="section-title fade-up"><em>Impressum</em></h2>
+    <div class="impressum-grid fade-up">
+      <div class="impressum-block">
+        <h3 data-it>Titolare del sito</h3><h3 data-en>Site Owner</h3>
+        <p><strong>FamilyFriendly.it — La guida indipendente per vacanze in famiglia nelle Dolomiti</strong></p>
+        <p>Santa Cristina Val Gardena (BZ) — Italia</p>
+        <p>📧 info@friendlyhotels.it · 🌐 /family/</p>
+      </div>
+      <div class="impressum-block">
+        <h3 data-it>Responsabile dei contenuti</h3><h3 data-en>Content Manager</h3>
+        <p><strong>Kurt Wallant</strong> — Esperto del territorio, padre e conoscitore delle attività family-friendly in Val Gardena. Promotore del turismo responsabile e della montagna a misura di bambino.</p>
+      </div>
+      <div class="impressum-block">
+        <h3 data-it>Finalità del sito</h3><h3 data-en>Site Purpose</h3>
+        <p>Informazioni neutrali su escursioni adatte alle famiglie, consigli pratici per viaggiare con bambini, hotel family-friendly e attività per tutte le età. Il sito non vende servizi, non effettua prenotazioni e non percepisce commissioni.</p>
+      </div>
+      <div class="impressum-block">
+        <h3 data-it>Responsabilità e Privacy</h3><h3 data-en>Responsibility & Privacy</h3>
+        <p>Le informazioni sono curate con attenzione e aggiornate periodicamente. Disponibilità e servizi delle strutture possono variare senza preavviso. FamilyFriendly.it non raccoglie dati personali degli utenti, salvo comunicazioni volontarie tramite email.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</article>
+</main>
+
+<!-- ════════ FOOTER ════════ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>👨‍👩‍👧‍👦 FamilyFriendly.it</h4>
+      <p>La guida indipendente per una vacanza in famiglia nelle Dolomiti. Informazioni neutrali e aggiornate per Val Gardena, Alpe di Siusi e dintorni.</p>
+      <p style="margin-top:12px;">📧 info@friendlyhotels.it</p>
+    </div>
+    <div class="footer-col">
+      <h4>Sezioni</h4>
+      <ul>      <li data-it><a href="#chi-e-kurt">Chi è Kurt</a></li><li data-en><a href="#chi-e-kurt">About Kurt</a></li>
+        <li data-it><a href="#cosa-fare">Cosa Fare</a></li><li data-en><a href="#cosa-fare">What to Do</a></li>
+        <li data-it><a href="#consigli">Consigli</a></li><li data-en><a href="#consigli">Tips</a></li>
+        <li><a href="#escursioni">10 Escursioni</a></li>
+        <li data-it><a href="#checklist">Checklist</a></li><li data-en><a href="#checklist">Checklist</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Hotel</h4>
+      <ul>
+        <li><a href="#hotel">Ortisei</a></li>
+        <li><a href="#hotel">Santa Cristina</a></li>
+        <li><a href="#hotel">Selva</a></li>
+        <li><a href="#hotel">Alpe di Siusi</a></li>
+        <li><a href="#hotel">Castelrotto</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Info</h4>
+      <ul>
+        <li><a href="#faq">Q&A Kurt Wallant</a></li>
+        <li data-it><a href="#impressum">Impressum</a></li><li data-en><a href="#impressum">Impressum</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 FamilyFriendly.it / Kurt Wallant · <span data-it>Ultimo aggiornamento:</span><span data-en>Last updated:</span> <time datetime="2026-04-29">29 aprile 2026</time></span>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/groups/dolomitessecretplaces" rel="noopener noreferrer" target="_blank">Facebook</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+const liveRegion = document.getElementById('hikes-live');
+let liveTimer;
+document.querySelectorAll('.diff-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.diff-tab').forEach(t => {
+      t.classList.remove('active');
+      t.setAttribute('aria-pressed', 'false');
+    });
+    tab.classList.add('active');
+    tab.setAttribute('aria-pressed', 'true');
+    const filter = tab.dataset.filter;
+    let visible = 0;
+    document.querySelectorAll('#hikes-grid .card').forEach(card => {
+      const show = filter === 'tutti' || card.dataset.difficulty === filter;
+      card.style.display = show ? '' : 'none';
+      card.setAttribute('aria-hidden', show ? 'false' : 'true');
+      if (show) visible++;
+    });
+    clearTimeout(liveTimer);
+    liveTimer = setTimeout(() => {
+      const label = tab.textContent.trim();
+      liveRegion.textContent = label === 'Tutte'
+        ? `Mostrate tutte le ${visible} escursioni.`
+        : `${visible} escursion${visible === 1 ? 'e' : 'i'} ${label.toLowerCase()} mostrat${visible === 1 ? 'a' : 'e'}.`;
+    }, 100);
+  });
+});
+
+document.querySelector('.mobile-toggle').addEventListener('click', function() {
+  const links = document.querySelector('.nav-links');
+  const isOpen = links.classList.contains('open');
+  links.classList.toggle('open');
+  this.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+});
+
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      item.closest('.faq-grid, .faq-section, section')?.querySelectorAll('.faq-item').forEach(s => s.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+});
+</script>
+
+<script>
+function setLang(lang) {
+  document.body.className = document.body.className.replace(/\blang-\w+\b/g, '').trim();
+  document.body.classList.add('lang-' + lang);
+  document.getElementById('html-root').lang = lang;
+  document.getElementById('btn-it').classList.toggle('active', lang === 'it');
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  try { localStorage.setItem('fmf-lang', lang); } catch(e){}
+}
+(function(){
+  let saved; try { saved = localStorage.getItem('fmf-lang'); } catch(e){}
+  setLang(saved || ((navigator.language || '').toLowerCase().startsWith('it') ? 'it' : 'en'));
+})();
+// ─── CLICKABLE EXCURSION CARDS ───
+document.querySelectorAll('.card[onclick]').forEach(card => {
+  card.style.cursor = 'pointer';
+  card.setAttribute('role', 'link');
+  card.setAttribute('tabindex', '0');
+  card.addEventListener('keydown', e => { if (e.key === 'Enter') window.open('https://tripplanner.valgardena.it/', '_blank'); });
+});
+
+</script>
+</body>
+</html>

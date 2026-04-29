@@ -1,0 +1,1684 @@
+<!DOCTYPE html>
+<html lang="it" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="geo.region" content="IT-BZ">
+<meta name="geo.placename" content="Santa Cristina Val Gardena">
+<meta name="geo.position" content="46.5577;11.7264">
+<meta name="ICBM" content="46.5577, 11.7264">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DogsFriendly.it — La guida indipendente per una vacanza dog‑friendly nelle Dolomiti</title>
+<meta name="description" content="Guida indipendente per viaggiare con il cane in Val Gardena, Alpe di Siusi e dintorni. Hotel dog-friendly, sentieri, consigli pratici e Q&A con Kurt Wallant.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="dog.html">
+<link rel="alternate" hreflang="it" href="dog.html">
+<link rel="alternate" hreflang="en" href="https://www.friendlyhotels.it/dog/en/">
+<link rel="alternate" hreflang="x-default" href="dog.html">
+<meta name="theme-color" content="#5a4032">
+<meta name="author" content="Kurt Wallant">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DogsFriendly.it — Vacanza con il cane nelle Dolomiti">
+<meta property="og:description" content="Hotel dog-friendly, sentieri sicuri, consigli pratici e Q&A con Kurt Wallant per viaggiare con il tuo cane in Val Gardena.">
+<meta property="og:url" content="https://www.friendlyhotels.it/dog/">
+<meta property="og:site_name" content="DogsFriendly.it">
+<meta property="og:locale" content="it_IT">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image" content="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=1200&q=80">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="article:author" content="Kurt Wallant">
+<meta property="article:modified_time" content="2026-04-29T10:00:00+02:00">
+<meta property="article:published_time" content="2026-03-30">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --stone-50: #fafaf9;
+  --stone-100: #f5f5f4;
+  --stone-200: #e7e5e4;
+  --stone-300: #d6d3d1;
+  --stone-400: #a8a29e;
+  --stone-500: #655e59;
+  --stone-600: #57534e;
+  --stone-700: #44403c;
+  --stone-800: #292524;
+  --stone-900: #1c1917;
+
+  --bark: #5a4032;
+  --bark-light: #7a5d4a;
+  --earth: #3d2b1f;
+  --gold: #c9a96e;
+  --gold-light: #dfc494;
+  --cream: #fdf8f2;
+  --paw: #d4a574;
+  --rust: #a0522d;
+  --meadow: #5a7a5e;
+  --meadow-light: #d4e6d6;
+  --sky: #87a5b4;
+  --alpine-sky: #4a7fa5;
+  --alpine-sky-light: #c8dce8;
+  --alpine-sky-pale: #edf4f9;
+  --terracotta: #b85c38;
+  --terracotta-light: #e8956d;
+  --dawn: #e8c4a0;
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'DM Sans', -apple-system, sans-serif;
+  --font-accent: 'Playfair Display', Georgia, serif;
+  --nav-h: 72px;
+  --section-pad: clamp(60px, 10vw, 120px);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: var(--nav-h); }
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--stone-800);
+  background: var(--cream);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.skip-link {
+  position: absolute; top: -100%; left: 16px; z-index: 9999;
+  background: var(--bark); color: #fff; padding: 12px 24px;
+  border-radius: 0 0 6px 6px; font-size: .85rem; font-weight: 600;
+  text-decoration: none; transition: top .3s;
+}
+.skip-link:focus { top: 0; }
+
+/* ─── NAVBAR ─── */
+.navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  height: auto;
+  transition: background .4s, box-shadow .4s, backdrop-filter .4s;
+}
+.navbar.scrolled {
+  background: rgba(253,248,242,.94);
+  backdrop-filter: blur(20px) saturate(1.4);
+  box-shadow: 0 1px 0 rgba(0,0,0,.06), 0 4px 16px rgba(90,64,50,.05);
+}
+.navbar .nav-inner {
+  max-width: 1280px; margin: 0 auto;
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  padding: 10px clamp(20px,4vw,48px) 0;
+  gap: 0;
+}
+.nav-logo {
+  font-family: var(--font-display); font-size: 1.15rem; font-weight: 700;
+  color: #fff; text-decoration: none; letter-spacing: .02em;
+  transition: color .3s; display: none;
+}
+.navbar.scrolled .nav-logo { color: var(--stone-900); }
+.nav-logo span { font-weight: 400; font-style: italic; opacity: .7; }
+
+.nav-subtitle {
+  width: 100%; text-align: center; padding: 4px 0 8px;
+  font-family: var(--font-display); font-size: 1.1rem; font-weight: 400;
+  font-style: italic; letter-spacing: .03em;
+  color: rgba(255,255,255,.75); text-decoration: none;
+  transition: color .3s, opacity .3s;
+}
+.nav-subtitle:hover { color: rgba(255,255,255,.8); }
+.navbar.scrolled .nav-subtitle { color: var(--stone-400); }
+.navbar.scrolled .nav-subtitle:hover { color: var(--forest); }
+.nav-links { display: flex; gap: 2px; align-items: center; list-style: none; flex-wrap: nowrap; }
+.nav-links a {
+  font-size: .75rem; font-weight: 500; text-transform: uppercase;
+  letter-spacing: .06em; color: rgba(255,255,255,.85);
+  text-decoration: none; padding: 7px 9px; border-radius: 4px;
+  transition: color .3s, background .3s; white-space: nowrap;
+}
+.navbar.scrolled .nav-links a { color: var(--stone-700); }
+.nav-links a:hover { color: #fff; background: rgba(255,255,255,.12); }
+.navbar.scrolled .nav-links a:hover { color: var(--bark); background: rgba(90,64,50,.06); }
+
+
+.lang-toggle-wrap { display: flex; gap: 2px; align-items: center; margin-left: 8px; }
+.lang-btn {
+  background: none; border: 1px solid rgba(255,255,255,.3); color: rgba(255,255,255,.7);
+  font-size: .7rem; font-weight: 600; padding: 4px 10px; border-radius: 20px;
+  cursor: pointer; transition: all .3s; font-family: var(--font-body); letter-spacing: .05em;
+}
+.lang-btn.active { background: rgba(255,255,255,.2); color: #fff; border-color: rgba(255,255,255,.5); }
+.navbar.scrolled .lang-btn { border-color: var(--stone-300); color: var(--stone-500); }
+.navbar.scrolled .lang-btn.active { background: var(--bark); color: #fff; border-color: var(--bark); }
+
+/* ─── NAV GUIDES ─── */
+.nav-guides {
+  display: flex; align-items: center; gap: 3px;
+  margin-left: 6px; padding-left: 10px;
+  border-left: 1px solid rgba(255,255,255,.15);
+}
+.navbar.scrolled .nav-guides { border-left-color: rgba(0,0,0,.08); }
+.nav-guides a {
+  font-size: .62rem !important; font-weight: 600 !important;
+  text-transform: uppercase !important; letter-spacing: .04em !important;
+  padding: 4px 8px !important; border-radius: 20px !important;
+  white-space: nowrap !important; transition: all .3s !important;
+  text-decoration: none !important;
+}
+.nav-guides a.g-home   { background: rgba(45,74,62,.15);   color: rgba(255,255,255,.8) !important; }
+.nav-guides a.g-family { background: rgba(46,107,138,.15); color: rgba(255,255,255,.8) !important; }
+.nav-guides a.g-dog    { background: rgba(212,165,116,.15); color: rgba(255,255,255,.8) !important; }
+.nav-guides a.g-bike   { background: rgba(184,92,56,.15);  color: rgba(255,255,255,.8) !important; }
+.nav-guides a.g-bus    { background: rgba(90,122,94,.15);   color: rgba(255,255,255,.8) !important; }
+.navbar.scrolled .nav-guides a.g-home   { background: rgba(45,74,62,.1);   color: #2d4a3e !important; }
+.navbar.scrolled .nav-guides a.g-family { background: rgba(46,107,138,.1); color: #2e6b8a !important; }
+.navbar.scrolled .nav-guides a.g-dog    { background: rgba(90,64,50,.08);  color: #5a4032 !important; }
+.navbar.scrolled .nav-guides a.g-bike   { background: rgba(184,92,56,.08); color: #b85c38 !important; }
+.navbar.scrolled .nav-guides a.g-bus    { background: rgba(90,122,94,.08); color: #5a7a5e !important; }
+.nav-guides a:hover { transform: scale(1.05); filter: brightness(1.2); }
+
+.mobile-toggle {
+  display: none; background: none; border: none; cursor: pointer;
+  width: 32px; height: 32px; position: relative;
+}
+.mobile-toggle span {
+  display: block; width: 22px; height: 2px; background: #fff;
+  position: absolute; left: 5px; transition: .3s;
+}
+.navbar.scrolled .mobile-toggle span { background: var(--stone-800); }
+.mobile-toggle span:nth-child(1) { top: 9px; }
+.mobile-toggle span:nth-child(2) { top: 15px; }
+.mobile-toggle span:nth-child(3) { top: 21px; }
+
+/* ─── HERO ─── */
+body.lang-it [data-en] { display:none !important; }
+body.lang-en [data-it] { display:none !important; }
+
+
+
+.hero {
+  min-height: 100vh; position: relative; display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(
+                175deg,
+                rgba(61,43,31,.55) 0%,
+                rgba(90,64,50,.4) 25%,
+                rgba(0,0,0,.2) 55%,
+                rgba(61,43,31,.6) 100%
+              ),
+              url('https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=1920&q=80') center/cover no-repeat;
+  overflow: hidden;
+}
+.hero::after {
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 200px;
+  background: linear-gradient(to top, var(--cream), transparent);
+  pointer-events: none;
+}
+.hero-content {
+  text-align: center; padding: 0 24px; position: relative; z-index: 2;
+  animation: heroFade 1.2s ease-out both;
+}
+@keyframes heroFade {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero-eyebrow {
+  font-family: var(--font-body); font-size: .72rem; text-transform: uppercase;
+  letter-spacing: .35em; color: var(--gold-light); margin-bottom: 20px;
+  font-weight: 500;
+}
+.hero h1 {
+  font-family: var(--font-display); font-size: clamp(3rem,7vw,5.5rem);
+  font-weight: 400; color: #fff; line-height: 1.05; margin-bottom: 20px;
+}
+.hero h1 em { font-style: italic; color: var(--gold-light); }
+.hero-sub {
+  font-family: var(--font-body); font-size: clamp(.95rem,1.3vw,1.15rem);
+  color: rgba(255,255,255,.75); max-width: 620px; margin: 0 auto 36px;
+  font-weight: 300; line-height: 1.7;
+}
+.hero-cta {
+  display: inline-flex; gap: 16px; flex-wrap: wrap; justify-content: center;
+}
+.btn {
+  display: inline-block; padding: 14px 36px; font-size: .82rem;
+  font-weight: 600; text-transform: uppercase; letter-spacing: .1em;
+  text-decoration: none; border-radius: 3px; transition: all .35s;
+}
+.btn-primary {
+  background: var(--gold); color: var(--earth); border: 1px solid var(--gold);
+  box-shadow: 0 4px 14px rgba(201,169,110,.35);
+}
+.btn-primary:hover {
+  background: var(--gold-light);
+  box-shadow: 0 6px 20px rgba(201,169,110,.45);
+  transform: translateY(-1px);
+}
+.btn-outline {
+  background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.4);
+}
+.btn-outline:hover { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.75); }
+
+/* ─── SECTIONS ─── */
+section { padding: var(--section-pad) clamp(20px,5vw,48px); }
+.section-inner { max-width: 1200px; margin: 0 auto; }
+.section-eyebrow {
+  font-family: var(--font-body); font-size: .7rem; text-transform: uppercase;
+  letter-spacing: .3em; color: var(--gold); font-weight: 600; margin-bottom: 12px;
+}
+.section-title {
+  font-family: var(--font-display); font-size: clamp(2rem,4vw,3.2rem);
+  font-weight: 400; color: var(--stone-900); line-height: 1.15; margin-bottom: 16px;
+}
+.section-title em { font-style: italic; color: var(--bark); }
+.section-desc {
+  font-size: .95rem; color: var(--stone-500); max-width: 640px; line-height: 1.75;
+  margin-bottom: 48px;
+}
+
+/* ─── ABOUT / INTRO ─── */
+.intro { background: var(--cream); }
+.intro-grid {
+  display: grid; grid-template-columns: 2fr 3fr; gap: 80px; align-items: start;
+}
+.intro-img-wrap {
+  position: relative; aspect-ratio: 4/5; border-radius: 4px; overflow: hidden;
+}
+.intro-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+.intro-img-accent {
+  position: absolute; bottom: -16px; right: -16px; width: 140px; height: 140px;
+  border: 3px solid var(--gold); border-radius: 50%; z-index: -1; opacity: .3;
+}
+.intro-text h2 { margin-bottom: 24px; }
+.intro-text p { margin-bottom: 18px; color: var(--stone-600); }
+.intro-text .signature {
+  font-family: var(--font-display); font-style: italic; font-size: 1.4rem;
+  color: var(--bark); margin-top: 24px;
+}
+
+/* ─── INFO BLOCKS ─── */
+.info-section { background: #fff; }
+.info-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 28px;
+}
+.info-block {
+  background: var(--cream); border-radius: 8px; padding: 32px;
+  border: 1px solid var(--stone-200); transition: all .35s;
+}
+.info-block:hover {
+  box-shadow: 0 8px 24px rgba(90,64,50,.08);
+  transform: translateY(-2px);
+}
+.info-block.positive { border-left: 4px solid var(--meadow); }
+.info-block.negative { border-left: 4px solid var(--terracotta); }
+.info-block h3 {
+  font-family: var(--font-display); font-size: 1.25rem; font-weight: 600;
+  color: var(--stone-900); margin-bottom: 12px;
+}
+.info-block .block-icon { font-size: 1.5rem; margin-bottom: 10px; display: block; }
+.info-block p, .info-block li {
+  font-size: .88rem; color: var(--stone-600); line-height: 1.65;
+}
+.info-block ul { list-style: none; padding: 0; }
+.info-block ul li { padding: 8px 0; border-bottom: 1px solid var(--stone-200); }
+.info-block ul li:last-child { border-bottom: none; }
+
+/* ─── CARD GRID ─── */
+.card-grid {
+  display: grid; gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+}
+.card {
+  cursor: pointer;
+
+  background: #fff; border-radius: 6px; overflow: hidden;
+  box-shadow: 0 2px 20px rgba(0,0,0,.04);
+  border: 1px solid transparent;
+  transition: transform .4s ease, box-shadow .4s ease, border-color .4s ease;
+}
+.card[onclick]:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,.12); }
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,.08);
+  border-color: rgba(90,64,50,.15);
+}
+.card-body { padding: 28px 28px 32px; }
+.card-tag {
+  font-size: .68rem; text-transform: uppercase; letter-spacing: .15em;
+  color: var(--gold); font-weight: 600; margin-bottom: 8px;
+}
+.card-body h3 {
+  font-family: var(--font-display); font-size: 1.35rem; font-weight: 600;
+  color: var(--stone-900); margin-bottom: 10px; line-height: 1.25;
+}
+.card-body p { font-size: .88rem; color: var(--stone-500); line-height: 1.65; }
+.card-link {
+  display: inline-block; margin-top: 16px; font-size: .78rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .1em; color: var(--bark);
+  text-decoration: none; border-bottom: 1px solid transparent;
+  transition: border-color .3s;
+}
+.card-link:hover { border-color: var(--bark); }
+
+/* ─── HIKES ─── */
+.hikes-section { background: var(--cream); }
+.hike-difficulty-tabs {
+  display: flex; gap: 8px; margin-bottom: 40px; flex-wrap: wrap;
+}
+.diff-tab {
+  padding: 10px 24px; border-radius: 40px; font-size: .78rem;
+  font-weight: 600; text-transform: uppercase; letter-spacing: .08em;
+  border: 1.5px solid var(--stone-300); color: var(--stone-500);
+  background: transparent; cursor: pointer; transition: all .3s;
+}
+.diff-tab.active, .diff-tab:hover {
+  background: var(--bark); color: #fff; border-color: var(--bark);
+}
+.diff-tab[data-filter="facile"].active,
+.diff-tab[data-filter="facile"]:hover {
+  background: var(--meadow); border-color: var(--meadow); color: #fff;
+}
+.diff-tab[data-filter="media"].active,
+.diff-tab[data-filter="media"]:hover {
+  background: var(--gold); border-color: var(--gold); color: var(--earth);
+}
+
+/* ─── HOTELS ─── */
+.hotels-section { background: #fff; }
+.hotel-categories {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px;
+}
+.hotel-cat {
+  background: var(--cream); border-radius: 8px; padding: 28px;
+  border: 1px solid var(--stone-200); transition: all .35s;
+}
+.hotel-cat:hover {
+  border-color: rgba(201,169,110,.4);
+  box-shadow: 0 6px 24px rgba(201,169,110,.08);
+}
+.hotel-cat-icon { font-size: 1.8rem; margin-bottom: 12px; }
+.hotel-cat h3 {
+  font-family: var(--font-display); font-size: 1.25rem; font-weight: 600;
+  color: var(--stone-900); margin-bottom: 6px;
+}
+.hotel-cat .hotel-loc {
+  font-size: .7rem; text-transform: uppercase; letter-spacing: .12em;
+  color: var(--gold); font-weight: 600; margin-bottom: 8px; display: block;
+}
+.hotel-cat p { font-size: .85rem; color: var(--stone-500); line-height: 1.6; margin-bottom: 6px; }
+.hotel-cat .hotel-pro { color: var(--meadow); font-weight: 500; }
+.hotel-cat .hotel-con { color: var(--stone-400); font-style: italic; font-size: .82rem; }
+.hotel-cat a.hotel-link {
+  display: inline-block; margin-top: 12px; font-size: .75rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .1em; color: var(--bark);
+  text-decoration: none; border-bottom: 1px solid transparent;
+  transition: border-color .3s;
+}
+.hotel-cat a.hotel-link:hover { border-color: var(--bark); }
+
+/* ─── ZONE HEADERS ─── */
+.zone-header {
+  margin-top: 48px; margin-bottom: 24px; padding-bottom: 12px;
+  border-bottom: 2px solid var(--gold);
+}
+.zone-header h3 {
+  font-family: var(--font-display); font-size: 1.8rem; font-weight: 700;
+  color: var(--stone-900);
+}
+.zone-header .zone-sub {
+  font-size: .78rem; text-transform: uppercase; letter-spacing: .15em;
+  color: var(--gold); font-weight: 600;
+}
+
+/* ─── TIPS SECTION ─── */
+.tips-section {
+  background: linear-gradient(160deg, #2a1f15 0%, #1a2e20 50%, #1a2e35 100%);
+  color: #fff; position: relative; overflow: hidden;
+}
+.tips-section::before {
+  content: ''; position: absolute; top: -100px; right: -100px;
+  width: 500px; height: 500px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(201,169,110,.14), transparent 70%);
+}
+.tips-section .section-eyebrow { color: var(--gold-light); }
+.tips-section .section-title { color: #fff; }
+.tips-section .section-title em { color: var(--gold-light); }
+.tips-section .section-desc { color: rgba(255,255,255,.55); }
+
+.tips-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px;
+}
+.tip-card {
+  background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08);
+  border-radius: 6px; padding: 24px; transition: all .35s;
+}
+.tip-card:hover {
+  background: rgba(255,255,255,.1);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.2);
+}
+.tip-card .tip-icon { font-size: 1.5rem; margin-bottom: 10px; }
+.tip-card h4 {
+  font-family: var(--font-display); font-size: 1.1rem; font-weight: 600;
+  color: #fff; margin-bottom: 8px;
+}
+.tip-card p { font-size: .85rem; color: rgba(255,255,255,.65); line-height: 1.6; }
+
+/* ─── CHECKLIST ─── */
+.checklist-section { background: var(--meadow-light); }
+.checklist-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px;
+}
+.checklist-item {
+  background: #fff; border-radius: 6px; padding: 16px 20px;
+  display: flex; align-items: center; gap: 12px;
+  border: 1px solid var(--stone-200); font-size: .88rem;
+  color: var(--stone-700); transition: all .3s;
+}
+.checklist-item:hover { border-color: var(--meadow); box-shadow: 0 4px 12px rgba(90,122,94,.1); }
+.checklist-item .check-icon { font-size: 1.2rem; flex-shrink: 0; }
+
+/* ─── FAQ ─── */
+.faq-section { background: var(--cream); }
+.faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.faq-item {
+  background: #fff; border-radius: 6px;
+  border: 1px solid var(--stone-200); transition: all .3s;
+  overflow: hidden;
+}
+.faq-item:hover { border-color: rgba(201,169,110,.5); box-shadow: 0 4px 16px rgba(201,169,110,.08); }
+.faq-item.open {
+  border-color: var(--gold);
+  border-left: 3px solid var(--gold);
+  box-shadow: 0 4px 20px rgba(201,169,110,.12);
+}
+.faq-item .faq-q {
+  font-family: var(--font-display); font-size: 1.05rem; font-weight: 600;
+  color: var(--stone-900);
+  padding: 22px 28px;
+  cursor: pointer;
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 12px; user-select: none; transition: color .2s;
+}
+.faq-item .faq-q::after {
+  content: '+';
+  font-family: var(--font-body); font-size: 1.4rem; font-weight: 300;
+  color: var(--gold); flex-shrink: 0; transition: transform .3s;
+}
+.faq-item.open .faq-q::after { transform: rotate(45deg); }
+.faq-item.open .faq-q { color: var(--bark); }
+.faq-item .faq-a {
+  font-size: .88rem; color: var(--stone-600); line-height: 1.65;
+  max-height: 0; overflow: hidden;
+  transition: max-height .4s ease, padding .3s;
+  padding: 0 28px;
+}
+.faq-item.open .faq-a { max-height: 600px; padding: 0 28px 22px; }
+.faq-item .faq-a strong { color: var(--bark); font-weight: 600; }
+
+/* ─── KURT TIP ─── */
+.kurt-tip {
+  background: linear-gradient(135deg, #fdf5eb 0%, var(--cream) 100%);
+  border-left: 3px solid var(--paw);
+  padding: 24px 28px; border-radius: 0 6px 6px 0;
+  margin: 32px 0;
+  box-shadow: 0 2px 12px rgba(212,165,116,.12);
+}
+.kurt-tip .tip-label {
+  font-size: .7rem; text-transform: uppercase; letter-spacing: .15em;
+  color: var(--bark); font-weight: 700; margin-bottom: 6px;
+}
+.kurt-tip p { font-size: .9rem; color: var(--stone-700); font-style: italic; }
+
+/* ─── CTA BANNER ─── */
+.cta-banner {
+  background: linear-gradient(135deg, #3d2b1f 0%, #1a2e20 60%, #162535 100%);
+  padding: 80px clamp(20px,5vw,48px); text-align: center; position: relative;
+  overflow: hidden;
+}
+.cta-banner::before {
+  content: ''; position: absolute; top: -50%; left: -20%;
+  width: 600px; height: 600px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(201,169,110,.1), transparent 70%);
+}
+.cta-banner h2 {
+  font-family: var(--font-display); font-size: clamp(1.8rem,3.5vw,2.8rem);
+  color: #fff; font-weight: 400; margin-bottom: 16px; position: relative;
+}
+.cta-banner h2 em { color: var(--gold-light); font-style: italic; }
+.cta-banner p {
+  color: rgba(255,255,255,.6); max-width: 520px; margin: 0 auto 32px;
+  font-size: .95rem;
+}
+
+/* ─── IMPRESSUM ─── */
+.impressum-section { background: var(--alpine-sky-pale); }
+.impressum-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.impressum-block { background: #fff; border-radius: 6px; padding: 28px; border: 1px solid var(--stone-200); }
+.impressum-block h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; color: var(--bark); margin-bottom: 12px; }
+.impressum-block p { font-size: .85rem; color: var(--stone-600); line-height: 1.7; margin-bottom: 8px; }
+
+/* ─── FOOTER ─── */
+.site-footer {
+  background: linear-gradient(180deg, #1c1917 0%, #141210 100%);
+  color: rgba(255,255,255,.5);
+  padding: 64px clamp(20px,5vw,48px) 32px;
+}
+.footer-inner {
+  max-width: 1200px; margin: 0 auto;
+  display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px;
+}
+.footer-col h4 {
+  font-family: var(--font-display); font-size: 1.1rem; color: #fff;
+  font-weight: 600; margin-bottom: 18px;
+}
+.footer-col p { font-size: .82rem; line-height: 1.7; }
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 8px; }
+.footer-col ul a {
+  font-size: .82rem; color: rgba(255,255,255,.5);
+  text-decoration: none; transition: color .3s;
+}
+.footer-col ul a:hover { color: var(--gold); }
+.footer-bottom {
+  max-width: 1200px; margin: 48px auto 0;
+  padding-top: 24px; border-top: 1px solid rgba(255,255,255,.08);
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: .75rem;
+}
+.footer-social { display: flex; gap: 16px; }
+.footer-social a {
+  color: rgba(255,255,255,.4); text-decoration: none;
+  font-size: .8rem; transition: color .3s;
+}
+.footer-social a:hover { color: var(--gold); }
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 1024px) {
+  .hotel-categories { grid-template-columns: repeat(2, 1fr); }
+  .tips-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 768px) {
+  .nav-subtitle { display: none; }
+  .nav-inner { justify-content: space-between; padding: 12px clamp(20px,4vw,48px); }
+  .nav-links {
+    display: flex !important; position: absolute; top: var(--nav-h); left: 0; right: 0;
+    background: rgba(253,248,242,.97); backdrop-filter: blur(20px);
+    flex-direction: column; padding: 20px; gap: 4px;
+    transform: translateY(-10px); opacity: 0; pointer-events: none;
+    transition: opacity .3s ease, transform .3s ease;
+    box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  }
+  .nav-links.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+  .nav-links a { color: var(--stone-700) !important; padding: 12px 16px !important; }
+  .nav-links a:hover { background: rgba(90,64,50,.06) !important; }
+  .nav-guides {
+    border-left: none; margin-left: 0; padding-left: 0; padding-top: 12px;
+    margin-top: 8px; border-top: 1px solid rgba(0,0,0,.06);
+    justify-content: center; flex-wrap: wrap;
+  }
+  .nav-guides a { font-size: .7rem !important; padding: 6px 14px !important; }
+  .mobile-toggle { display: block; }
+  .intro-grid { grid-template-columns: 1fr; gap: 40px; }
+  .info-grid { grid-template-columns: 1fr; }
+  .card-grid { grid-template-columns: 1fr; }
+  .faq-grid { grid-template-columns: 1fr; }
+  .hotel-categories { grid-template-columns: 1fr; }
+  .tips-grid { grid-template-columns: 1fr; }
+  .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+  .impressum-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+}
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+.fade-up {
+  opacity: 0; transform: translateY(24px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://www.friendlyhotels.it/#kurt-wallant",
+      "name": "Kurt Wallant",
+      "jobTitle": "Fondatore di Friendly Hotels e Dolomites and Secret Places",
+      "description": "Esperto delle Dolomiti con oltre 15 anni di esperienza. Fondatore della community Dolomites and Secret Places (45.000+ membri). Ha testato personalmente oltre 80 hotel e percorso più di 2.000 km di sentieri.",
+      "knowsAbout": [
+        "Val Gardena",
+        "Dolomiti",
+        "Hotel Alto Adige",
+        "Escursioni Alpine",
+        "Turismo sostenibile",
+        "Cultura ladina",
+        "Mobilità in montagna"
+      ],
+      "url": "https://www.friendlyhotels.it",
+      "sameAs": [
+        "https://www.facebook.com/groups/dolomitessecretplaces"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.friendlyhotels.it/#organization",
+      "name": "Friendly Hotels - Val Gardena",
+      "alternateName": "Dolomites and Secret Places",
+      "url": "https://www.friendlyhotels.it",
+      "founder": {
+        "@id": "https://www.friendlyhotels.it/#kurt-wallant"
+      },
+      "sameAs": [
+        "https://www.facebook.com/groups/dolomitessecretplaces"
+      ]
+    },
+    {
+      "@type": "TouristDestination",
+      "@id": "https://www.friendlyhotels.it/#val-gardena",
+      "name": "Val Gardena",
+      "alternateName": [
+        "Gröden",
+        "Gherdëina"
+      ],
+      "description": "Valle delle Dolomiti in Alto Adige, patrimonio UNESCO. Comprende Ortisei (1.236 m), Santa Cristina (1.428 m) e Selva di Val Gardena (1.563 m).",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "46.5574",
+        "longitude": "11.7746"
+      },
+      "containedInPlace": {
+        "@type": "AdministrativeArea",
+        "name": "Alto Adige, Italia"
+      },
+      "isPartOf": {
+        "@type": "Place",
+        "name": "Dolomiti UNESCO"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Friendly Hotels",
+          "item": "https://www.friendlyhotels.it/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Dog Friendly",
+          "item": "https://www.friendlyhotels.it/dog/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "headline": "DogsFriendly — Vacanza con il Cane nelle Dolomiti",
+      "description": "Guida indipendente per viaggiare con il cane in Val Gardena. 25 hotel dog-friendly, 10 sentieri adatti, regole dei pascoli, checklist e Q&A con Kurt Wallant.",
+      "author": {
+        "@id": "https://www.friendlyhotels.it/#kurt-wallant"
+      },
+      "publisher": {
+        "@id": "https://www.friendlyhotels.it/#organization"
+      },
+      "datePublished": "2026-03-30",
+      "dateModified": "2026-04-29T10:00:00+02:00",
+      "inLanguage": "it",
+      "about": {
+        "@id": "https://www.friendlyhotels.it/#val-gardena"
+      },
+      "mentions": [{"@type": "Place", "name": "Vallunga"}, {"@type": "Place", "name": "Monte Pana"}, {"@type": "Place", "name": "Rifugio Firenze"}, {"@type": "Place", "name": "Alpe di Siusi"}],
+      "keywords": "hotel cani Val Gardena, vacanza cane Dolomiti, sentieri cani Ortisei, dog friendly Alto Adige, escursioni cane montagna",
+      "mainEntityOfPage": "https://www.friendlyhotels.it/dog/",
+      "url": "https://www.friendlyhotels.it/dog/"
+    },
+    {
+      "@type": "FAQPage",
+      "speakable": {"@type": "SpeakableSpecification", "cssSelector": [".faq-item"]},
+      "name": "FAQ — Dog Friendly",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Posso portare il mio cane su tutti i sentieri della Val Gardena?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Quasi tutti, ma non tutti sono adatti. Evita ferrate, ghiaioni e creste esposte. La montagna non è un parco giochi: scegli percorsi ampi, boschivi e con ombra."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Gli impianti di risalita accettano i cani?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La maggior parte sì. Porta sempre la museruola: spesso non la chiedono, ma quando serve, serve. Tieni il cane vicino nelle cabine."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Come mi comporto se incontro mucche o cavalli?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Distanza. Le mucche difendono i vitelli. Se si avvicinano troppo, sgancia il guinzaglio: il cane sa allontanarsi da solo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual è il periodo migliore per venire con un cane?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Giugno e settembre: clima fresco, sentieri meno affollati. Luglio e agosto vanno bene evitando le ore calde."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual è l'errore più comune dei turisti con il cane?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pensare che la montagna sia come il parco sotto casa. Rispetto, prudenza e buon senso sono gli accessori indispensabili."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","name":"Escursioni Dog-Friendly in Val Gardena — DogsFriendly","itemListElement":[
+{"@type":"ListItem","position":1,"item":{"@type":"TouristTrip","name":"Sentiero della Val d'Anna","description":"Passeggiata ombreggiata nel bosco, ideale per cani. Percorso Kneipp e area pic-nic.","touristType":"Proprietari di cani"}},
+{"@type":"ListItem","position":2,"item":{"@type":"TouristTrip","name":"Ortisei → S. Giacomo","description":"Passeggiata panoramica tra i masi. Cani al guinzaglio, sentiero ampio e ombreggiato.","touristType":"Proprietari di cani"}},
+{"@type":"ListItem","position":3,"item":{"@type":"TouristTrip","name":"Sentiero della Ferrovia","description":"Il vecchio tracciato ferroviario. Pianeggiante, largo e sicuro per il cane.","touristType":"Proprietari di cani"}},
+{"@type":"ListItem","position":4,"item":{"@type":"TouristTrip","name":"Vallunga","description":"Valle glaciale nel Parco Puez-Odle. Cani ammessi al guinzaglio. Nessun pascolo attraversato.","touristType":"Proprietari di cani"}},
+{"@type":"ListItem","position":5,"item":{"@type":"TouristTrip","name":"Monte Pana → Saltria","description":"Traversata sull'Alpe di Siusi. Attenzione ai pascoli con mucche. Cane sempre al guinzaglio.","touristType":"Proprietari di cani"}},
+{"@type":"ListItem","position":6,"item":{"@type":"TouristTrip","name":"Giro del Monte Pana","description":"Anello semplice tra prati e boschi. Acqua per il cane lungo il percorso.","touristType":"Proprietari di cani"}},
+{"@type":"ListItem","position":7,"item":{"@type":"TouristTrip","name":"Rifugio Firenze","description":"Da Col Raiser al Rifugio Firenze. Cani ammessi in terrazza. Vista sulle Odle.","touristType":"Proprietari di cani"}},
+{"@type":"ListItem","position":8,"item":{"@type":"TouristTrip","name":"Compaccio → Panorama","description":"Passeggiata sull'Alpe di Siusi. Ampi prati, panorama sullo Sciliar. Cane al guinzaglio.","touristType":"Proprietari di cani"}},
+{"@type":"ListItem","position":9,"item":{"@type":"TouristTrip","name":"Lago di San Giacomo","description":"Piccolo lago alpino raggiungibile a piedi. Ideale per una pausa con il cane.","touristType":"Proprietari di cani"}},
+{"@type":"ListItem","position":10,"item":{"@type":"TouristTrip","name":"Col de Flam (parte bassa)","description":"Sentiero nel bosco sotto il Sassolungo. Ombra, silenzio e nessun pascolo.","touristType":"Proprietari di cani"}}
+]}
+</script>
+</head>
+<body class="lang-it">
+<a data-it href="#chi-e-kurt" class="skip-link">Salta al contenuto principale</a>
+<a data-en href="#chi-e-kurt" class="skip-link">Skip to main content</a>
+<!-- ════════ NAVBAR ════════ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">Kurt Wallant <span>/ DogsFriendly</span></a>
+    <ul class="nav-links" id="nav-links">      <li data-it><a href="#chi-e-kurt">Chi è Kurt</a></li><li data-en><a href="#chi-e-kurt">About Kurt</a></li>
+      <li data-it><a href="#cosa-fare">Cosa Fare</a></li><li data-en><a href="#cosa-fare">What to Do</a></li>
+      <li data-it><a href="#consigli">Consigli</a></li><li data-en><a href="#consigli">Tips</a></li>
+      <li data-it><a href="#escursioni">Escursioni</a></li><li data-en><a href="#escursioni">Hikes</a></li>
+      <li data-it><a href="#hotel">Hotel</a></li><li data-en><a href="#hotel">Hotels</a></li>
+      <li data-it><a href="#checklist">Checklist</a></li><li data-en><a href="#checklist">Checklist</a></li>
+      <li data-it><a href="#faq">Q&A</a></li><li data-en><a href="#faq">Q&A</a></li>
+      <li data-it><a href="#impressum">Impressum</a></li><li data-en><a href="#impressum">Impressum</a></li>
+      <li class="lang-toggle-wrap"><button class="lang-btn active" id="btn-it" onclick="setLang('it')">IT</button><button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button></li>
+      <li class="nav-guides-wrap" style="display:contents;">
+        <div class="nav-guides">
+          <a href="index.html" class="g-home" target="_blank" rel="noopener noreferrer">Home</a>
+          <a href="family.html" class="g-family">Family</a>
+          <a href="bike.html" class="g-bike">Bike</a>
+          <a href="bus.html" class="g-bus">Bus</a>
+        </div>
+      </li>
+    </ul>
+    <button class="mobile-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="#home" class="nav-subtitle">Kurt Wallant / DogsFriendly</a>
+  </div>
+</nav>
+
+<!-- ════════ HERO ════════ -->
+<header class="hero" id="home" role="img" aria-label="Cane in montagna nelle Dolomiti della Val Gardena">
+  <div class="hero-content">
+    <div data-it class="hero-eyebrow">Val Gardena · Alpe di Siusi · Dolomiti</div>
+    <div data-en class="hero-eyebrow">Val Gardena · Alpe di Siusi · Dolomites</div>
+    <h1 data-it>Dolomiti<br><em>con il cane</em></h1>
+    <h1 data-en>Dolomites<br><em>with your dog</em></h1>
+    <p data-it class="hero-sub">La guida indipendente per una vacanza dog‑friendly nelle Dolomiti. Val Gardena, Alpe di Siusi e dintorni: tutto ciò che devi sapere per viaggiare con il tuo cane.</p>
+    <p data-en class="hero-sub">The independent guide for a dog‑friendly holiday in the Dolomites. Val Gardena, Alpe di Siusi and surroundings: everything you need to know to travel with your dog.</p>
+    <div class="hero-cta">
+      <a data-it href="#escursioni" class="btn btn-primary">Scopri i Sentieri</a>
+      <a data-en href="#escursioni" class="btn btn-primary">Explore the Trails</a>
+      <a data-it href="#hotel" class="btn btn-outline">Hotel Dog‑Friendly</a>
+      <a data-en href="#hotel" class="btn btn-outline">Dog‑Friendly Hotels</a>
+    </div>
+  </div>
+</header>
+
+<main role="main">
+<article>
+
+<!-- ════════ INTRO ════════ -->
+<section class="intro" id="chi-e-kurt">
+  <div class="section-inner">
+    <div class="intro-grid">
+      <div class="intro-img-wrap fade-up">
+        <img src="https://i.imgur.com/VvciqZH.jpeg" alt="Kurt Wallant, esperto delle Dolomiti e fondatore di DogsFriendly.it" width="800" style="border-radius:12px;">
+        <div class="intro-img-accent"></div>
+      </div>
+      <div class="intro-text fade-up">
+        <div data-it class="section-eyebrow">Guida, escursionista, voce delle Dolomiti</div>
+        <div data-en class="section-eyebrow">Guide, hiker, voice of the Dolomites</div>
+        <h2 data-it class="section-title">Chi è <em>Kurt Wallant</em></h2>
+        <h2 data-en class="section-title">Who is <em>Kurt Wallant</em></h2>
+        <p class="article-meta" style="font-size:.78rem; color: var(--stone-400); margin-bottom:16px; letter-spacing:.05em;">
+          <span data-it>Ultimo aggiornamento:</span><span data-en>Last updated:</span> <time datetime="2026-04-29">29 aprile 2026</time>
+        </p>
+
+        <p data-it>Kurt Wallant è una di quelle persone che sembrano nate con la montagna nel sangue. È cresciuto in un <strong>maso di famiglia sopra Ortisei</strong>, circondato da boschi, pascoli e animali. Fin da bambino aiutava i genitori con le mucche, i cani da fattoria e la vita quotidiana del maso, imparando presto che la montagna non è solo un paesaggio: è un ambiente vivo, che va rispettato.</p>
+        <p data-en>Kurt Wallant is one of those people who seem born with mountains in their blood. He grew up on a <strong>family farm above Ortisei</strong>, surrounded by forests, pastures and animals. As a child he helped his parents with the cows, farm dogs and daily life, learning early that the mountain is not just scenery: it is a living environment to be respected.</p>
+
+        <p data-it>A <strong>sei anni</strong> faceva già le sue prime escursioni con il padre, e a <strong>otto</strong> conosceva i nomi dei sentieri meglio di molti adulti. Da allora non ha mai smesso di camminare: d'estate esplora vallate, boschi e altipiani, d'inverno accompagna amici e viaggiatori sulle ciaspolate più sicure, e in ogni stagione osserva come cambia la natura e come si muovono gli animali.</p>
+        <p data-en>At <strong>six years old</strong> he was already hiking with his father, and at <strong>eight</strong> he knew the trail names better than most adults. Since then he has never stopped walking: in summer he explores valleys, forests and plateaus, in winter he guides friends and travellers on the safest snowshoe hikes, and in every season he watches how nature changes and animals move.</p>
+
+        <p data-it>Kurt è anche un <strong>grande amante dei cani</strong>. Ne ha sempre avuti: dal cane da pastore del maso ai meticci adottati negli anni. Per lui un cane non è un "accessorio da vacanza", ma un compagno di vita che merita rispetto, attenzione e scelte consapevoli. Proprio per questo è diventato un punto di riferimento per chi vuole vivere la montagna con il proprio animale in modo responsabile.</p>
+        <p data-en>Kurt is also a <strong>great dog lover</strong>. He has always had them: from the farm sheepdog to the mixed breeds adopted over the years. For him a dog is not a "holiday accessory" but a life companion that deserves respect, attention and conscious choices. This is why he has become a reference point for those who want to experience the mountains with their pet responsibly.</p>
+
+        <p data-it>Oggi Kurt è conosciuto in tutta la valle come <strong>esperto di sentieri</strong>, <strong>conoscitore del territorio</strong>, <strong>voce sincera e diretta</strong> per chi cerca consigli pratici, e soprattutto come qualcuno che dice le cose come stanno, senza filtri e senza romanticismi inutili.</p>
+        <p data-en>Today Kurt is known throughout the valley as a <strong>trail expert</strong>, <strong>territory connoisseur</strong>, <strong>honest and direct voice</strong> for those seeking practical advice, and above all as someone who tells it like it is, without filters or unnecessary romanticism.</p>
+
+        <p data-it>La sua filosofia è semplice:</p>
+        <p data-en>His philosophy is simple:</p>
+
+        <div class="kurt-tip" style="margin-top:16px;">
+          <div data-it class="tip-label">La filosofia di Kurt</div><div data-en class="tip-label">Kurt's Philosophy</div>
+          <p><span data-it>"La montagna ti dà tutto, se la rispetti. E un cane, in montagna, ti insegna a guardare il mondo con più calma e più attenzione."</span><span data-en>"The mountain gives you everything if you respect it. And a dog in the mountains teaches you to look at the world with more calm and more attention."</span></p>
+        </div>
+
+        <div class="signature">— Kurt Wallant</div>
+      </div>
+    </div>
+
+    <div style="margin-top:60px; max-width:820px;">
+      <p style="font-size:.95rem; color:var(--stone-600); line-height:1.75;">Le Dolomiti sono un luogo speciale: montagne verticali, boschi freschi, pascoli aperti e tre paesi — Ortisei, Santa Cristina e Selva — che combinano natura, cultura e servizi. Viaggiare qui con un cane è possibile, piacevole e spesso sorprendente, ma richiede attenzione, rispetto delle regole locali e una buona pianificazione.</p>
+      <p style="font-size:.95rem; color:var(--stone-600); line-height:1.75;">Questa pagina nasce per offrire <strong>informazioni trasparenti, neutrali e aggiornate</strong>, senza toni pubblicitari, per aiutarti a organizzare una vacanza serena e responsabile con il tuo amico a quattro zampe.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ COSA FARE / NON FARE ════════ -->
+<section class="info-section" id="cosa-fare">
+  <div class="section-inner">
+    <div data-it class="section-eyebrow fade-up">Guida Pratica</div>
+    <div data-en class="section-eyebrow fade-up">Practical Guide</div>
+    <h2 data-it class="section-title fade-up">Cosa puoi fare <em>e cosa no</em></h2>
+    <h2 data-en class="section-title fade-up">What you can do <em>and what not</em></h2>
+    <p data-it class="section-desc fade-up">Conoscere le regole e le opportunità è il primo passo per una vacanza serena con il tuo cane in Val Gardena.</p>
+    <p data-en class="section-desc fade-up">Knowing the rules and opportunities is the first step to a relaxing holiday with your dog in Val Gardena.</p>
+
+    <div class="info-grid">
+      <!-- COSA PUOI FARE -->
+      <div class="info-block positive fade-up">
+        <span class="block-icon">✅</span>
+        <h3 data-it>Cosa puoi fare con il tuo cane</h3><h3 data-en>What you can do with your dog</h3>
+        <ul>
+          <li data-it><strong>Escursioni e passeggiate</strong> — La maggior parte dei sentieri è accessibile ai cani, purché tenuti al guinzaglio. Percorsi facili e medi sono perfetti per una giornata all'aria aperta, con boschi ombreggiati e ruscelli dove rinfrescarsi.</li><li data-en><strong>Hikes and walks</strong> — Most trails are accessible to dogs, provided they are kept on a leash. Easy and moderate routes are perfect for a day outdoors, with shaded forests and streams to cool off.</li>
+          <li data-it><strong>Impianti di risalita</strong> — Molti impianti accettano i cani, spesso gratuitamente o con un piccolo supplemento. È obbligatorio avere con sé la museruola, anche se non sempre viene richiesta.</li><li data-en><strong>Cable cars</strong> — Many lifts accept dogs, often free or with a small supplement. A muzzle must be carried, even if not always required.</li>
+          <li data-it><strong>Rifugi e malghe</strong> — La maggior parte accoglie i cani sulle terrazze esterne; alcuni anche all'interno, a discrezione del gestore. In alta stagione è consigliabile avvisare prima.</li><li data-en><strong>Mountain huts</strong> — Most welcome dogs on outdoor terraces; some also inside, at the manager's discretion. In high season it's advisable to call ahead.</li>
+          <li data-it><strong>Passeggiate nei paesi</strong> — Ortisei, Santa Cristina e Selva offrono percorsi pedonali, parchi e zone tranquille per brevi passeggiate serali.</li><li data-en><strong>Village walks</strong> — Ortisei, Santa Cristina and Selva offer pedestrian paths, parks and quiet areas for short evening walks.</li>
+        </ul>
+      </div>
+
+      <!-- COSA NON FARE -->
+      <div class="info-block negative fade-up">
+        <span class="block-icon">🚫</span>
+        <h3 data-it>Cosa non si può fare (o è sconsigliato)</h3><h3 data-en>What's not allowed (or not recommended)</h3>
+        <ul>
+          <li data-it><strong>Lasciare il cane libero nei pascoli</strong> — Le mucche, soprattutto con vitelli, possono diventare imprevedibili. È fondamentale mantenere distanza e non attraversare il gruppo.</li><li data-en><strong>Let your dog off-leash in pastures</strong> — Cows, especially with calves, can become unpredictable. It's essential to keep distance and not walk through the herd.</li>
+          <li data-it><strong>Entrare in aree protette con restrizioni</strong> — Alcune zone richiedono guinzaglio corto o vietano l'accesso ai cani per motivi di tutela ambientale.</li><li data-en><strong>Enter protected areas with restrictions</strong> — Some zones require a short leash or prohibit dog access for environmental protection.</li>
+          <li data-it><strong>Affrontare ferrate o sentieri esposti</strong> — Non sono adatti ai cani, anche se abituati alla montagna. Le rocce calde e i tratti metallici possono essere pericolosi.</li><li data-en><strong>Attempt via ferratas or exposed trails</strong> — These are not suitable for dogs, even experienced ones. Hot rocks and metal sections can be dangerous.</li>
+          <li data-it><strong>Ignorare le regole locali</strong> — Guinzaglio obbligatorio in molti tratti, museruola da portare sempre con sé, rispetto degli spazi pubblici.</li><li data-en><strong>Ignore local rules</strong> — Leash mandatory on many sections, muzzle to be carried at all times, respect for public spaces.</li>
+          <li data-it><strong>Lasciare il cane in auto</strong> — Le temperature possono salire rapidamente anche in montagna, soprattutto nei parcheggi esposti.</li><li data-en><strong>Leave your dog in the car</strong> — Temperatures can rise quickly even in the mountains, especially in exposed car parks.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CONSIGLIO DI KURT -->
+    <div class="kurt-tip fade-up">
+      <div data-it class="tip-label">🐾 Il consiglio di Kurt Wallant</div><div data-en class="tip-label">🐾 Kurt Wallant's Advice</div>
+      <p><span data-it>"La montagna è generosa, ma non perdona la leggerezza. Con un cane devi pensare sempre due passi avanti: dove metterà le zampe, cosa potrebbe spaventarlo, quanto caldo farà tra un'ora. Se lo rispetti e lo ascolti, lui ti guiderà verso la vacanza più bella che puoi immaginare."</span><span data-en>"The mountain is generous but doesn't forgive carelessness. With a dog you must always think two steps ahead: where will he put his paws, what might scare him, how hot will it be in an hour. If you respect and listen to him, he'll guide you to the most wonderful holiday you can imagine."</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ CONSIGLI ESCURSIONI ════════ -->
+<section class="tips-section" id="consigli">
+  <div class="section-inner">
+    <div data-it class="section-eyebrow fade-up">Trekking con il Cane</div>
+    <div data-en class="section-eyebrow fade-up">Hiking with Your Dog</div>
+    <h2 data-it class="section-title fade-up">Consigli per fare <em>escursioni</em></h2>
+    <h2 data-en class="section-title fade-up">Tips for <em>hiking</em></h2>
+    <p data-it class="section-desc fade-up">Fare trekking con un cane nelle Dolomiti può essere un'esperienza meravigliosa, ma richiede attenzione, preparazione e rispetto dell'ambiente.</p>
+    <p data-en class="section-desc fade-up">Hiking with a dog in the Dolomites can be a wonderful experience, but it requires attention, preparation and respect for the environment.</p>
+
+    <div class="tips-grid">
+      <div class="tip-card fade-up">
+        <div class="tip-icon">🥾</div>
+        <h4>1. Scegli il sentiero giusto</h4>
+        <p data-it>Valuta lunghezza del percorso, dislivello, tipo di terreno ed esposizione al sole. Preferisci percorsi boschivi o sentieri ampi e regolari, soprattutto nelle ore più calde.</p><p data-en>Assess trail length, elevation gain, terrain type and sun exposure. Prefer wooded paths or wide, regular trails, especially during the hottest hours.</p>
+      </div>
+      <div class="tip-card fade-up">
+        <div class="tip-icon">🐾</div>
+        <h4>2. Guinzaglio sempre con te</h4>
+        <p data-it>In Val Gardena il guinzaglio è obbligatorio in molte aree, la museruola deve essere portata. Un cane libero può spaventare il bestiame, disturbare la fauna o mettersi in pericolo.</p><p data-en>In Val Gardena the leash is mandatory in many areas, and a muzzle must be carried. An off-leash dog can startle livestock, disturb wildlife or put itself in danger.</p>
+      </div>
+      <div class="tip-card fade-up">
+        <div class="tip-icon">🐄</div>
+        <h4>3. Comportarsi nei pascoli</h4>
+        <p data-it>Mantieni distanza dalle mucche, soprattutto con vitelli. Non attraversare mai il gruppo. Se una mucca si avvicina, sgancia il guinzaglio: il cane saprà allontanarsi da solo.</p><p data-en>Keep distance from cows, especially with calves. Never walk through the herd. If a cow approaches, unclip the leash: the dog will know to move away on its own.</p>
+      </div>
+      <div class="tip-card fade-up">
+        <div class="tip-icon">💧</div>
+        <h4>4. Acqua, pause e caldo</h4>
+        <p data-it>Porta sempre acqua fresca, una ciotola pieghevole, snack leggeri e un telo per farlo riposare all'ombra. Evita le ore centrali nei mesi estivi.</p><p data-en>Always bring fresh water, a collapsible bowl, light snacks and a blanket to let him rest in the shade. Avoid midday hours in summer months.</p>
+      </div>
+      <div class="tip-card fade-up">
+        <div class="tip-icon">🧭</div>
+        <h4>5. Temporali e meteo</h4>
+        <p data-it>Il meteo cambia rapidamente. Evita creste e zone esposte, rientra ai primi tuoni. I cani sentono i tuoni prima di noi: se diventano nervosi, è ora di muoversi.</p><p data-en>Weather changes rapidly. Avoid ridges and exposed areas, head back at the first thunder. Dogs hear thunder before we do: if they become nervous, it's time to move.</p>
+      </div>
+      <div class="tip-card fade-up">
+        <div class="tip-icon">🎒</div>
+        <h4>6. Attrezzatura consigliata</h4>
+        <p data-it>Pettorina robusta anti‑fuga, guinzaglio lungo + corto, museruola, salviette e telo, kit primo soccorso, sacchetti biodegradabili, pettorina con targhetta e numero di telefono.</p><p data-en>Sturdy escape-proof harness, long + short leash, muzzle, wipes and blanket, first aid kit, biodegradable bags, harness with tag and phone number.</p>
+      </div>
+      <div class="tip-card fade-up">
+        <div class="tip-icon">🦌</div>
+        <h4>7. Rispetto per la fauna</h4>
+        <p data-it>Nei boschi vivono caprioli, marmotte, volpi, galli forcelli, cervi. Un cane libero può disturbare gli animali. Tienilo vicino, evita i cespugli, non farlo avvicinare alle tane.</p><p data-en>Roe deer, marmots, foxes, grouse and deer live in the forests. An off-leash dog can disturb wildlife. Keep him close, avoid bushes, don't let him approach burrows.</p>
+      </div>
+      <div class="tip-card fade-up">
+        <div class="tip-icon">⛰️</div>
+        <h4>8. Rifugi e soste</h4>
+        <p data-it>Scegli tavoli all'aperto, porta un telo su cui farlo sdraiare, evita di farlo avvicinare ad altri cani senza chiedere. Non dare da mangiare al cane vicino ai tavoli degli altri ospiti.</p><p data-en>Choose outdoor tables, bring a blanket for him to lie on, avoid letting him approach other dogs without asking. Don't feed the dog near other guests' tables.</p>
+      </div>
+      <div class="tip-card fade-up">
+        <div class="tip-icon">🧹</div>
+        <h4>9. Lascia il sentiero pulito</h4>
+        <p data-it>Ciò che porti in montagna, riportalo a valle. Raccogli sempre i bisogni del cane, anche nei boschi: la montagna non è un bagno pubblico e i sentieri sono frequentati da tutti.</p><p data-en>Whatever you bring up the mountain, bring back down. Always pick up after your dog, even in the woods: the mountain is not a public bathroom and trails are used by everyone.</p>
+      </div>
+      <div class="tip-card fade-up">
+        <div class="tip-icon">🐕</div>
+        <h4>10. Conosci i limiti del cane</h4>
+        <p data-it>Ogni cane è diverso: alcuni amano camminare per ore, altri soffrono il caldo, altri ancora hanno paura degli impianti. Osserva il suo comportamento e adatta l'escursione. Una buona vacanza è quella in cui tutti stanno bene, anche il cane.</p><p data-en>Every dog is different: some love walking for hours, others suffer in the heat, others are afraid of cable cars. Watch his behaviour and adapt the hike. A good holiday is one where everyone is comfortable, including the dog.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ CONSIGLI PRATICI ════════ -->
+<section style="background:#fff; padding: clamp(40px,6vw,80px) clamp(20px,5vw,48px);">
+  <div class="section-inner">
+    <div data-it class="section-eyebrow fade-up">Consigli Pratici</div>
+    <div data-en class="section-eyebrow fade-up">Practical Tips</div>
+    <h2 data-it class="section-title fade-up">Per una vacanza <em>serena</em></h2>
+    <h2 data-en class="section-title fade-up">For a <em>relaxing</em> holiday</h2>
+    <div style="max-width:720px;">
+      <div class="info-block positive fade-up" style="margin-bottom:0;">
+        <ul>
+          <li data-it>Porta sempre acqua, ciotola pieghevole e sacchetti.</li><li data-en>Always bring water, a collapsible bowl and bags.</li>
+          <li data-it>Evita le ore più calde nei mesi estivi.</li><li data-en>Avoid the hottest hours in summer months.</li>
+          <li data-it>Scegli sentieri meno affollati se il tuo cane è ansioso o reattivo.</li><li data-en>Choose less crowded trails if your dog is anxious or reactive.</li>
+          <li data-it>Mantieni distanza dal bestiame e non attraversare gruppi di mucche.</li><li data-en>Keep distance from livestock and don't walk through herds of cows.</li>
+          <li data-it>Informati prima sugli impianti che accettano cani e sulle regole aggiornate.</li><li data-en>Check in advance which lifts accept dogs and current rules.</li>
+          <li data-it>In caso di temporali improvvisi, evita zone esposte e rientra nei boschi.</li><li data-en>In case of sudden storms, avoid exposed areas and return to the woods.</li>
+          <li data-it>Se il tuo cane ha difficoltà con gli impianti, preferisci percorsi a piedi o navette.</li><li data-en>If your dog struggles with cable cars, prefer walking routes or shuttles.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ 10 ESCURSIONI ════════ -->
+<section class="hikes-section" id="escursioni">
+  <div class="section-inner">
+    <div data-it class="section-eyebrow fade-up">Sentieri & Trekking</div>
+    <div data-en class="section-eyebrow fade-up">Trails & Trekking</div>
+    <h2 data-it class="section-title fade-up">10 escursioni consigliate <em>con il cane</em></h2>
+    <h2 data-en class="section-title fade-up">10 recommended hikes <em>with your dog</em></h2>
+    <p data-it class="section-desc fade-up">Itinerari selezionati per terreni sicuri, ombra, acqua e panorami spettacolari senza rischi inutili. Gestibili anche per cani non abituati alla montagna.</p>
+    <p data-en class="section-desc fade-up">Routes selected for safe terrain, shade, water and spectacular panoramas without unnecessary risks. Suitable even for dogs not used to mountains.</p>
+
+    <div class="hike-difficulty-tabs fade-up" role="group" aria-label="Filtra escursioni per difficoltà">
+      <button class="diff-tab active" data-filter="tutti" aria-pressed="true">Tutte</button>
+      <button class="diff-tab" data-filter="facile" aria-pressed="false" data-it>Facili</button><button data-en class="diff-tab" data-filter="facile" aria-pressed="false">Easy</button>
+      <button class="diff-tab" data-filter="media" aria-pressed="false">Medie</button>
+    </div>
+
+    <p id="hikes-live" aria-live="polite" aria-atomic="true" class="sr-only"></p>
+
+    <div class="card-grid" id="hikes-grid">
+
+      <!-- FACILI -->
+      <div class="card fade-up" onclick="window.open('https://tripplanner.valgardena.it/', '_blank')" data-difficulty="facile">
+        <div class="card-body">
+          <div data-it class="card-tag">🟢 Facile · Ortisei · 1–2 ore</div><div data-en class="card-tag">🟢 Easy · Ortisei · 1–2 hrs</div>
+          <h3>1. Sentiero della Val d'Anna</h3>
+          <p data-it>Percorso ombreggiato nel bosco con presenza di ruscelli e terreno morbido e sicuro. Perfetto nelle giornate calde; molto frequentato in alta stagione.</p><p data-en>Shaded forest trail with streams and soft, safe terrain. Perfect on hot days; very busy in high season.</p>
+        </div>
+      </div>
+
+      <div class="card fade-up" onclick="window.open('https://tripplanner.valgardena.it/', '_blank')" data-difficulty="facile">
+        <div class="card-body">
+          <div data-it class="card-tag">🟢 Facile · Ortisei → S. Cristina · 1,5–2 ore</div><div data-en class="card-tag">🟢 Easy · Ortisei → S. Cristina · 1.5–2 hrs</div>
+          <h3>3. Sentiero della Ferrovia</h3>
+          <p data-it>Percorso pianeggiante con fondo compatto. Ideale per cani anziani o poco allenati. Perfetto anche come passeggiata serale.</p><p data-en>Flat trail with compact surface. Ideal for older or less fit dogs. Also perfect as an evening walk.</p>
+        </div>
+      </div>
+
+      <div class="card fade-up" onclick="window.open('https://tripplanner.valgardena.it/', '_blank')" data-difficulty="facile">
+        <div class="card-body">
+          <div data-it class="card-tag">🟢 Facile · Selva · 1–3 ore (a piacere)</div><div data-en class="card-tag">🟢 Easy · Selva · 1–3 hrs (at your pace)</div>
+          <h3>4. Vallunga</h3>
+          <p data-it>Valle ampia e ventilata con sentiero largo e sicuro e ombra nelle prime ore del giorno. Presenza di cervi e fauna: tenere il cane vicino.</p><p data-en>Wide, breezy valley with a broad, safe trail and shade in the early hours. Deer and wildlife present: keep your dog close.</p>
+        </div>
+      </div>
+
+      <div class="card fade-up" onclick="window.open('https://tripplanner.valgardena.it/', '_blank')" data-difficulty="facile">
+        <div class="card-body">
+          <div data-it class="card-tag">🟢 Facile · Santa Cristina · 1–2 ore</div><div data-en class="card-tag">🟢 Easy · Santa Cristina · 1–2 hrs</div>
+          <h3>6. Giro del Monte Pana</h3>
+          <p>Percorso ombreggiato con aree verdi e prati. Ideale per famiglie. Molto frequentato nei weekend.</p>
+        </div>
+      </div>
+
+      <div class="card fade-up" onclick="window.open('https://tripplanner.valgardena.it/', '_blank')" data-difficulty="facile">
+        <div class="card-body">
+          <div class="card-tag">🟢 Facile · Alpe di Siusi · 1–2 ore</div>
+          <h3>8. Compaccio → Panorama</h3>
+          <p>Percorso semplice e aperto con vista spettacolare e possibilità di soste in malga. Esposto al sole: portare acqua.</p>
+        </div>
+      </div>
+
+      <div class="card fade-up" onclick="window.open('https://tripplanner.valgardena.it/', '_blank')" data-difficulty="facile">
+        <div class="card-body">
+          <div class="card-tag">🟢 Facile · Castelrotto · 1–1,5 ore</div>
+          <h3>9. Lago di San Giacomo</h3>
+          <p>Ombra costante, percorso breve e rilassante. Ideale nelle giornate calde. Perfetto per cani anziani o poco allenati.</p>
+        </div>
+      </div>
+
+      <div class="card fade-up" onclick="window.open('https://tripplanner.valgardena.it/', '_blank')" data-difficulty="facile">
+        <div class="card-body">
+          <div data-it class="card-tag">🟢 Facile · Ortisei · 1 ora</div><div data-en class="card-tag">🟢 Easy · Ortisei · 1 hr</div>
+          <h3>10. Col de Flam (parte bassa)</h3>
+          <p>Bosco fresco, percorso breve ma suggestivo. Adatto come passeggiata mattutina. Evitare la parte alta (parco avventura).</p>
+        </div>
+      </div>
+
+      <!-- MEDIE -->
+      <div class="card fade-up" onclick="window.open('https://tripplanner.valgardena.it/', '_blank')" data-difficulty="media">
+        <div class="card-body">
+          <div class="card-tag">🟡 Media · Ortisei · 2–3 ore</div>
+          <h3>2. Ortisei → S. Giacomo</h3>
+          <p>Sentiero regolare e ben segnalato con boschi freschi e punti panoramici. Alcuni tratti in salita, ma senza difficoltà tecniche.</p>
+        </div>
+      </div>
+
+      <div class="card fade-up" onclick="window.open('https://tripplanner.valgardena.it/', '_blank')" data-difficulty="media">
+        <div class="card-body">
+          <div class="card-tag">🟡 Media · S. Cristina → Alpe di Siusi · 3–4 ore</div>
+          <h3>5. Monte Pana → Saltria</h3>
+          <p>Sentieri ampi e regolari con panorami aperti e possibilità di soste in malga. Evitare le ore più calde; presenza di pascoli.</p>
+        </div>
+      </div>
+
+      <div class="card fade-up" onclick="window.open('https://tripplanner.valgardena.it/', '_blank')" data-difficulty="media">
+        <div class="card-body">
+          <div class="card-tag">🟡 Media · da Daunei · 3–4 ore</div>
+          <h3>7. Rifugio Firenze</h3>
+          <p>Sentiero ampio e panoramico con terreno sicuro. Rifugio con terrazza esterna. Evitare giornate molto calde; presenza di pascoli.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUGGERIMENTI FINALI -->
+    <div class="kurt-tip fade-up" style="margin-top:40px;">
+      <div class="tip-label">🐾 Suggerimenti per scegliere l'escursione giusta</div>
+      <p>Preferisci sentieri ombreggiati nelle ore calde. Evita percorsi con ghiaioni, ferrate o tratti esposti. Porta sempre acqua, anche se il sentiero sembra breve. Se il tuo cane è ansioso, scegli itinerari poco affollati. In presenza di bestiame, tieni il cane vicino a te. Controlla sempre il meteo: i temporali pomeridiani sono frequenti.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ HOTEL DOG-FRIENDLY ════════ -->
+<section class="hotels-section" id="hotel">
+  <div class="section-inner">
+    <div data-it class="section-eyebrow fade-up">Dove Dormire</div>
+    <div data-en class="section-eyebrow fade-up">Where to Stay</div>
+    <h2 data-it class="section-title fade-up">Strutture <em>dog‑friendly</em></h2>
+    <h2 data-en class="section-title fade-up"><em>Dog‑friendly</em> Properties</h2>
+    <p data-it class="section-desc fade-up">Informazioni neutrali e non pubblicitarie. Nessuna commissione, nessuna prenotazione. Solo consigli trasparenti per scegliere la struttura giusta per te e il tuo cane.</p>
+    <p data-en class="section-desc fade-up">Neutral, non-promotional information. No commissions, no bookings. Just transparent advice to choose the right property for you and your dog.</p>
+
+    <!-- ORTISEI -->
+    <div class="zone-header fade-up">
+      <div class="zone-sub">Urtijëi</div>
+      <h3>Ortisei</h3>
+    </div>
+    <div class="hotel-categories">
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Angelo Engel</h3>
+        <p>Hotel storico vicino al centro, atmosfera tradizionale.</p>
+        <p class="hotel-pro">✔ Posizione centrale, giardino, personale abituato ai cani.</p>
+        <p class="hotel-con">Camere non molto grandi; accesso limitato alla spa.</p>
+        <a href="https://www.hotelangelo.net" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Adler Dolomiti Spa & Sport Resort</h3>
+        <p>Grande struttura con parco privato.</p>
+        <p class="hotel-pro">✔ Ampi spazi esterni, posizione centrale.</p>
+        <p class="hotel-con">Supplemento elevato; accessi limitati.</p>
+        <a href="https://www.adler-resorts.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Grones</h3>
+        <p>Hotel tranquillo sopra il centro.</p>
+        <p class="hotel-pro">✔ Zona silenziosa, camere spaziose.</p>
+        <p class="hotel-con">Distanza dal centro.</p>
+        <a href="https://www.hotelgrones.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Pinei</h3>
+        <span class="hotel-loc">tra Ortisei e Castelrotto</span>
+        <p>Struttura isolata nel bosco.</p>
+        <p class="hotel-pro">✔ Natura immediata, tranquillità.</p>
+        <p class="hotel-con">Lontano dai servizi.</p>
+        <a href="https://www.pinei.it" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Apartments Cesa Rabanser</h3>
+        <p>Appartamenti indipendenti.</p>
+        <p class="hotel-pro">✔ Routine flessibili, accesso diretto all'esterno.</p>
+        <p class="hotel-con">Meno servizi.</p>
+        <a href="https://www.cesarabanser.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Garni Dr. Senoner</h3>
+        <p>Garni semplice e funzionale.</p>
+        <p class="hotel-pro">✔ Atmosfera familiare.</p>
+        <p class="hotel-con">Servizi essenziali.</p>
+        <a href="https://www.garnisenoner.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Digon</h3>
+        <p>Hotel tradizionale con ampi prati.</p>
+        <p class="hotel-pro">✔ Perfetto per passeggiate nel verde.</p>
+        <p class="hotel-con">Distanza dal centro.</p>
+        <a href="https://www.hoteldigon.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+    </div>
+
+    <!-- SANTA CRISTINA -->
+    <div class="zone-header fade-up">
+      <div class="zone-sub">S. Crestina</div>
+      <h3>Santa Cristina</h3>
+    </div>
+    <div class="hotel-categories">
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Interski</h3>
+        <p>Struttura tranquilla immersa nel verde.</p>
+        <p class="hotel-pro">✔ Accesso diretto ai sentieri.</p>
+        <p class="hotel-con">Lontano dal centro.</p>
+        <a href="https://www.interski.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Touring</h3>
+        <p>Hotel centrale.</p>
+        <p class="hotel-pro">✔ Comodo per passeggiate urbane.</p>
+        <p class="hotel-con">Spazi esterni ridotti.</p>
+        <a href="https://www.touringhotel.it" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Garni Mezdi</h3>
+        <p>Garni semplice e panoramico.</p>
+        <p class="hotel-pro">✔ Tranquillità.</p>
+        <p class="hotel-con">Servizi essenziali.</p>
+        <a href="https://www.garnimezdi.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+    </div>
+
+    <!-- SELVA -->
+    <div class="zone-header fade-up">
+      <div class="zone-sub">Sëlva</div>
+      <h3>Selva di Val Gardena</h3>
+    </div>
+    <div class="hotel-categories">
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Antares</h3>
+        <p>Hotel moderno vicino agli impianti.</p>
+        <p class="hotel-pro">✔ Posizione strategica.</p>
+        <p class="hotel-con">Zona molto frequentata.</p>
+        <a href="https://www.hotelantares.it" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Aaritz</h3>
+        <p>Struttura elegante.</p>
+        <p class="hotel-pro">✔ Camere spaziose.</p>
+        <p class="hotel-con">Supplemento animali alto.</p>
+        <a href="https://www.hotelaaritz.it" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Oswald</h3>
+        <p>Hotel storico.</p>
+        <p class="hotel-pro">✔ Atmosfera tradizionale.</p>
+        <p class="hotel-con">Poche aree esterne.</p>
+        <a href="https://www.hoteloswald.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Sun Valley</h3>
+        <p>Struttura moderna.</p>
+        <p class="hotel-pro">✔ Camere ampie.</p>
+        <p class="hotel-con">Accessi limitati ai cani.</p>
+        <a href="https://www.sunvalley.it" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+    </div>
+
+    <!-- VARIE ZONE -->
+    <div class="zone-header fade-up">
+      <div class="zone-sub">tra Ortisei e Santa Cristina</div>
+      <h3>Altre Zone</h3>
+    </div>
+    <div class="hotel-categories">
+      <div class="hotel-cat fade-up">
+        <h3>Garni Mirabell</h3>
+        <span class="hotel-loc">tra Ortisei e Santa Cristina</span>
+        <p>Garni familiare in posizione panoramica.</p>
+        <p class="hotel-pro">✔ Gestione attenta, tranquillità.</p>
+        <p class="hotel-con">Servizi essenziali.</p>
+        <a href="https://www.garnimirabell.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+    </div>
+
+    <!-- ALPE DI SIUSI -->
+    <div class="zone-header fade-up">
+      <div class="zone-sub">Seiser Alm</div>
+      <h3>Alpe di Siusi</h3>
+    </div>
+    <div class="hotel-categories">
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Icaro</h3>
+        <p>Hotel panoramico immerso nei prati.</p>
+        <p class="hotel-pro">✔ Passeggiate immediate.</p>
+        <p class="hotel-con">Accesso regolamentato.</p>
+        <a href="https://www.hotelicaro.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Sporthotel Sonne</h3>
+        <p>Struttura di charme.</p>
+        <p class="hotel-pro">✔ Posizione unica.</p>
+        <p class="hotel-con">Accesso auto limitato.</p>
+        <a href="https://www.sporthotelsonne.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Steger‑Dellai</h3>
+        <p>Hotel storico nella natura.</p>
+        <p class="hotel-pro">✔ Sentieri ovunque.</p>
+        <p class="hotel-con">Lontano dai centri abitati.</p>
+        <a href="https://www.stegerdellai.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+    </div>
+
+    <!-- CASTELROTTO -->
+    <div class="zone-header fade-up">
+      <div class="zone-sub">Kastelruth</div>
+      <h3>Castelrotto</h3>
+    </div>
+    <div class="hotel-categories">
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Alpenroyal</h3>
+        <p>Struttura tradizionale.</p>
+        <p class="hotel-pro">✔ Posizione tranquilla.</p>
+        <p class="hotel-con">Distanza dall'altopiano.</p>
+        <a href="https://www.alpenroyal.it" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Cavallino d'Oro</h3>
+        <p>Hotel storico in centro.</p>
+        <p class="hotel-pro">✔ Atmosfera caratteristica.</p>
+        <p class="hotel-con">Nessun giardino.</p>
+        <a href="https://www.cavallinodoro.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+    </div>
+
+    <!-- LAION -->
+    <div class="zone-header fade-up">
+      <div class="zone-sub">Lajen</div>
+      <h3>Laion</h3>
+    </div>
+    <div class="hotel-categories">
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Andechserhof</h3>
+        <p>Struttura panoramica.</p>
+        <p class="hotel-pro">✔ Tranquillità.</p>
+        <p class="hotel-con">Distanza dai paesi gardenesi.</p>
+        <a href="https://www.andechserhof.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Bergblick</h3>
+        <p>Piccolo hotel familiare.</p>
+        <p class="hotel-pro">✔ Atmosfera semplice.</p>
+        <p class="hotel-con">Servizi essenziali.</p>
+        <a href="https://www.bergblick.it" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+    </div>
+
+    <!-- FRAZIONI E DINTORNI -->
+    <div class="zone-header fade-up">
+      <div class="zone-sub">tra Ortisei e Castelrotto</div>
+      <h3>Frazioni e Dintorni</h3>
+    </div>
+    <div class="hotel-categories">
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Niblea</h3>
+        <p>Struttura moderna in posizione panoramica.</p>
+        <p class="hotel-pro">✔ Vista spettacolare, tranquillità.</p>
+        <p class="hotel-con">Strada ripida.</p>
+        <a href="https://www.niblea.com" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Albion</h3>
+        <p>Grande struttura con parco e piscina.</p>
+        <p class="hotel-pro">✔ Ampi spazi, molte camere con balcone.</p>
+        <p class="hotel-con">Supplemento animali.</p>
+        <a href="https://www.hotelalbion.it" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+      <div class="hotel-cat fade-up">
+        <h3>Hotel Pinei Nature Retreat</h3>
+        <p>Immerso nel bosco.</p>
+        <p class="hotel-pro">✔ Silenzio e natura.</p>
+        <p class="hotel-con">Molto isolato.</p>
+        <a href="https://www.pinei.it" class="hotel-link" target="_blank" rel="noopener noreferrer">Visita il sito →</a>
+      </div>
+    </div>
+
+    <!-- CONSIGLIO FINALE HOTEL -->
+    <div class="kurt-tip fade-up" style="margin-top:40px;">
+      <div class="tip-label">🐾 Il consiglio finale di Kurt Wallant</div>
+      <p>"Scegli l'hotel che fa stare bene il tuo cane, non quello che fa bella figura su Instagram. In montagna conta la tranquillità, lo spazio e la possibilità di uscire a camminare senza stress. Se il cane è sereno, la vacanza diventa più bella per tutti."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ CHECKLIST ════════ -->
+<section class="checklist-section" id="checklist">
+  <div class="section-inner">
+    <div data-it class="section-eyebrow fade-up">Prima di Partire</div>
+    <div data-en class="section-eyebrow fade-up">Before You Leave</div>
+    <h2 data-it class="section-title fade-up">Checklist <em>essenziale</em></h2>
+    <h2 data-en class="section-title fade-up">Essential <em>Checklist</em></h2>
+    <p data-it class="section-desc fade-up">Tutto ciò che serve nello zaino per una vacanza dog‑friendly nelle Dolomiti.</p>
+    <p data-en class="section-desc fade-up">Everything you need in your backpack for a dog-friendly holiday in the Dolomites.</p>
+    <div class="checklist-grid">
+      <div class="checklist-item fade-up"><span class="check-icon">🦮</span> Guinzaglio corto + guinzaglio lungo</div>
+      <div class="checklist-item fade-up"><span class="check-icon">🐕</span> Museruola (obbligatoria da portare)</div>
+      <div class="checklist-item fade-up"><span class="check-icon">📋</span> Libretto sanitario</div>
+      <div class="checklist-item fade-up"><span class="check-icon">🧴</span> Salviette e telo assorbente</div>
+      <div class="checklist-item fade-up"><span class="check-icon">🩹</span> Kit di primo soccorso base</div>
+      <div class="checklist-item fade-up"><span class="check-icon">🍖</span> Crocchette e snack abituali</div>
+      <div class="checklist-item fade-up"><span class="check-icon">🦺</span> Pettorina robusta (anti‑fuga)</div>
+      <div class="checklist-item fade-up"><span class="check-icon">♻️</span> Sacchetti biodegradabili</div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ Q&A ════════ -->
+<section class="faq-section" id="faq">
+  <div class="section-inner">
+    <div data-it class="section-eyebrow fade-up">Domande Frequenti</div>
+    <div data-en class="section-eyebrow fade-up">Frequently Asked Questions</div>
+    <h2 data-it class="section-title fade-up">Q&A con <em>Kurt Wallant</em></h2>
+    <h2 data-en class="section-title fade-up">Q&A with <em>Kurt Wallant</em></h2>
+    <p data-it class="section-desc fade-up">15 domande che tutti fanno prima di una vacanza dog‑friendly in Val Gardena.</p>
+    <p data-en class="section-desc fade-up">15 questions everyone asks before a dog-friendly holiday in Val Gardena.</p>
+
+    <div class="faq-grid">
+      <div class="faq-item open fade-up">
+        <div class="faq-q">1. Posso portare il mio cane su tutti i sentieri della Val Gardena?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «Quasi tutti, sì. Ma non tutti sono adatti. Evita ferrate, ghiaioni e creste esposte. La montagna non è un parco giochi: scegli percorsi ampi, boschivi e con ombra. Il cane ti ringrazierà.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div class="faq-q">2. Gli impianti di risalita accettano i cani?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «La maggior parte sì. Porta sempre la museruola: spesso non la chiedono, ma quando serve… serve. E tieni il cane vicino: le cabine possono spaventarlo.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div class="faq-q">3. Come mi comporto se incontro mucche o cavalli?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «Regola d'oro: distanza. Le mucche non sono aggressive, ma difendono i vitelli. Se si avvicinano troppo, sgancia il guinzaglio: il cane sa allontanarsi da solo. Tu resta calmo e continua a camminare.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div class="faq-q">4. Posso lasciare il cane libero nei prati?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «No. I prati non sono "campi liberi": sono pascoli, proprietà private o habitat di fauna. Il cane libero può creare problemi. Guinzaglio lungo, e va benissimo così.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div class="faq-q">5. Qual è il periodo migliore per venire con un cane?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «Giugno e settembre sono perfetti: clima fresco, sentieri meno affollati. Luglio e agosto vanno bene, ma evita le ore calde. In inverno? Solo se il cane è abituato alla neve.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div class="faq-q">6. Ci sono rifugi che accettano i cani?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «Quasi tutti sulle terrazze esterne. Dentro dipende dal gestore. Io consiglio sempre di avvisare: un messaggio evita malintesi.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div class="faq-q">7. Il mio cane non è abituato alla montagna: può fare escursioni?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «Sì, ma inizia con percorsi brevi e ombreggiati. La Val d'Anna, la Ferrovia e la Vallunga sono perfetti per i "debuttanti".»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div class="faq-q">8. Cosa devo portare nello zaino per il cane?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «Acqua, ciotola, sacchetti, un telo, qualche snack e un guinzaglio di riserva. In montagna il minimalismo non funziona: meglio una cosa in più che una in meno.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div class="faq-q">9. Posso farlo entrare nei laghetti o nei ruscelli?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «Nei ruscelli sì, nei laghetti dipende. Alcuni sono zone protette. E ricorda: l'acqua di montagna è fredda, non tutti i cani la tollerano.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div class="faq-q">10. Come gestisco il caldo in montagna?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «Il caldo in quota è subdolo: l'aria è secca e il sole picchia forte. Parti presto, cerca ombra e fai pause. Se il cane ansima troppo, torna indietro senza pensarci due volte.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div class="faq-q">11. Cosa faccio se arriva un temporale improvviso?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «Scendi di quota e rientra nel bosco. Le creste e i prati aperti sono pericolosi. I cani sentono i tuoni prima di noi: se diventano nervosi, è ora di muoversi.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div class="faq-q">12. Ci sono zone dove i cani non possono entrare?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «Sì: alcune aree protette e tratti specifici dell'Alpe di Siusi. Le regole cambiano ogni anno: controlla sempre prima di partire.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div class="faq-q">13. Il mio cane tira molto: posso comunque fare trekking?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «Meglio una pettorina robusta e un guinzaglio corto. In montagna un cane che tira può farti cadere. Se serve, scegli sentieri larghi e poco affollati.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div class="faq-q">14. Posso portare due cani?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «Certo, ma devi avere controllo su entrambi. Due cani eccitati in un pascolo o su un impianto possono diventare complicati. Valuta onestamente le tue capacità.»</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div class="faq-q">15. Qual è l'errore più comune dei turisti con il cane?</div>
+        <div class="faq-a"><strong>Kurt Wallant:</strong> «Pensare che la montagna sia come il parco sotto casa. Qui ci sono animali, pendenze, meteo imprevedibile e persone che vogliono godersi la natura. Rispetto, prudenza e buon senso: sono questi i veri "accessori" indispensabili.»</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ CONCLUSIONE ════════ -->
+<section class="cta-banner">
+  <h2>Una vacanza nelle Dolomiti con il cane:<br><em>un'esperienza da vivere con consapevolezza</em></h2>
+  <p>Le Dolomiti sono un luogo straordinario, ma anche delicato. Viaggiare con un cane qui significa rispettare la natura, conoscere i limiti del proprio animale, scegliere strutture adatte e muoversi con responsabilità.</p>
+  <p style="color:rgba(255,255,255,.5); max-width:520px; margin:0 auto 32px; font-size:.88rem;">friendlyhotels.it/dog nasce proprio per questo: offrire informazioni chiare, neutrali e utili, per permettere a ogni viaggiatore di vivere la montagna nel modo più bello e rispettoso possibile.</p>
+
+  <div class="kurt-tip" style="max-width:600px; margin:0 auto; text-align:left; background:rgba(255,255,255,.06); border-color:var(--gold);">
+    <div class="tip-label" style="color:var(--gold-light);">🐾 Il messaggio finale di Kurt Wallant</div>
+    <p style="color:rgba(255,255,255,.8);">"La montagna è un luogo di libertà, ma anche di responsabilità. Se rispetti i sentieri, gli animali e il tuo cane, la Val Gardena ti regalerà una delle esperienze più autentiche della tua vita."</p>
+  </div>
+</section>
+
+<!-- ════════ IMPRESSUM ════════ -->
+<section class="impressum-section" id="impressum">
+  <div class="section-inner">
+    <div data-it class="section-eyebrow fade-up">Informazioni Legali</div>
+    <div data-en class="section-eyebrow fade-up">Legal Information</div>
+    <h2 class="section-title fade-up"><em>Impressum</em></h2>
+    <div class="impressum-grid fade-up">
+      <div class="impressum-block">
+        <h3 data-it>Titolare del sito</h3><h3 data-en>Site Owner</h3>
+        <p><strong>DogsFriendly.it — La guida indipendente per viaggiare con il cane nelle Dolomiti</strong></p>
+        <p>Santa Cristina Val Gardena (BZ) — Italia</p>
+        <p>📧 info@friendlyhotels.it · 🌐 /dog/</p>
+      </div>
+      <div class="impressum-block">
+        <h3 data-it>Responsabile dei contenuti</h3><h3 data-en>Content Manager</h3>
+        <p><strong>Kurt Wallant</strong> — Esperto del territorio, escursionista e amante degli animali. Profondo conoscitore dei sentieri gardenesi e promotore del turismo responsabile con il cane.</p>
+      </div>
+      <div class="impressum-block">
+        <h3 data-it>Finalità del sito</h3><h3 data-en>Site Purpose</h3>
+        <p>Informazioni neutrali e non pubblicitarie sulle strutture dog‑friendly, consigli pratici per escursioni con il cane, linee guida per un turismo responsabile e contenuti educativi sulla sicurezza in montagna. Il sito non vende servizi, non effettua prenotazioni e non percepisce commissioni.</p>
+      </div>
+      <div class="impressum-block">
+        <h3 data-it>Responsabilità e Privacy</h3><h3 data-en>Responsibility & Privacy</h3>
+        <p>Le informazioni sono curate con attenzione e aggiornate periodicamente. Disponibilità, regolamenti e politiche delle strutture possono cambiare senza preavviso. DogsFriendly.it non raccoglie dati personali degli utenti, salvo comunicazioni volontarie tramite email.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</article>
+</main>
+
+<!-- ════════ FOOTER ════════ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>🐾 DogsFriendly.it</h4>
+      <p>La guida indipendente per una vacanza dog‑friendly nelle Dolomiti. Informazioni neutrali e aggiornate per Val Gardena, Alpe di Siusi e dintorni.</p>
+      <p style="margin-top:12px;">📧 info@friendlyhotels.it</p>
+    </div>
+    <div class="footer-col">
+      <h4>Sezioni</h4>
+      <ul>      <li><a href="#chi-e-kurt">Chi è Kurt</a></li>
+        <li><a href="#cosa-fare">Cosa Fare</a></li>
+        <li><a href="#consigli">Consigli Trekking</a></li>
+        <li><a href="#escursioni">10 Escursioni</a></li>
+        <li><a href="#checklist">Checklist</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Hotel</h4>
+      <ul>
+        <li><a href="#hotel">Ortisei</a></li>
+        <li><a href="#hotel">Santa Cristina</a></li>
+        <li><a href="#hotel">Selva</a></li>
+        <li><a href="#hotel">Alpe di Siusi</a></li>
+        <li><a href="#hotel">Castelrotto</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Info</h4>
+      <ul>
+        <li><a href="#faq">Q&A Kurt Wallant</a></li>
+        <li><a href="#impressum">Impressum</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 DogsFriendly.it / Kurt Wallant · <span data-it>Ultimo aggiornamento:</span><span data-en>Last updated:</span> <time datetime="2026-04-29">29 aprile 2026</time></span>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/groups/dolomitessecretplaces" rel="noopener noreferrer" target="_blank">Facebook</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Navbar scroll effect
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// Fade-up on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// Hike difficulty filter
+const liveRegion = document.getElementById('hikes-live');
+let liveTimer;
+document.querySelectorAll('.diff-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.diff-tab').forEach(t => {
+      t.classList.remove('active');
+      t.setAttribute('aria-pressed', 'false');
+    });
+    tab.classList.add('active');
+    tab.setAttribute('aria-pressed', 'true');
+
+    const filter = tab.dataset.filter;
+    let visible = 0;
+    document.querySelectorAll('#hikes-grid .card').forEach(card => {
+      const show = filter === 'tutti' || card.dataset.difficulty === filter;
+      card.style.display = show ? '' : 'none';
+      card.setAttribute('aria-hidden', show ? 'false' : 'true');
+      if (show) visible++;
+    });
+
+    clearTimeout(liveTimer);
+    liveTimer = setTimeout(() => {
+      const label = tab.textContent.trim();
+      liveRegion.textContent = label === 'Tutte'
+        ? `Mostrate tutte le ${visible} escursioni.`
+        : `${visible} escursion${visible === 1 ? 'e' : 'i'} ${label.toLowerCase()} mostrat${visible === 1 ? 'a' : 'e'}.`;
+    }, 100);
+  });
+});
+
+// Mobile toggle
+document.querySelector('.mobile-toggle').addEventListener('click', function() {
+  const links = document.querySelector('.nav-links');
+  const isOpen = links.classList.contains('open');
+  links.classList.toggle('open');
+  this.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+  this.setAttribute('aria-label', 'Menu');
+});
+
+// FAQ Accordion
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      item.closest('.faq-grid, .faq-section, section')?.querySelectorAll('.faq-item').forEach(s => s.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+});
+</script>
+
+<script>
+function setLang(lang) {
+  document.body.className = document.body.className.replace(/\blang-\w+\b/g, '').trim();
+  document.body.classList.add('lang-' + lang);
+  document.getElementById('html-root').lang = lang;
+  document.getElementById('btn-it').classList.toggle('active', lang === 'it');
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  try { localStorage.setItem('dgf-lang', lang); } catch(e){}
+}
+(function(){
+  let saved; try { saved = localStorage.getItem('dgf-lang'); } catch(e){}
+  setLang(saved || ((navigator.language || '').toLowerCase().startsWith('it') ? 'it' : 'en'));
+})();
+// ─── CLICKABLE EXCURSION CARDS ───
+document.querySelectorAll('.card[onclick]').forEach(card => {
+  card.style.cursor = 'pointer';
+  card.setAttribute('role', 'link');
+  card.setAttribute('tabindex', '0');
+  card.addEventListener('keydown', e => { if (e.key === 'Enter') window.open('https://tripplanner.valgardena.it/', '_blank'); });
+});
+
+</script>
+</body>
+</html>
